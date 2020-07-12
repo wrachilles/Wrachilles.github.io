@@ -1,83 +1,1250 @@
----
-title: Mod List
-layout: page
-permalink: /modlist
----
-
-<input type="text" class="search" id="modInput" onkeyup="filterTable('mod')"
-    placeholder="{{- site.data.language.str_mod_search -}}">
-
-
-<table style="display: table;" class="sortable" id="mod">
-    <tr>
-        <th>Mod Name</th>
-        <th style="width: 35%">Author</th>
-        <th style="width: 20%">Version</th>
-    </tr>
-
-    {%- for mod in site.data.modlist -%}
-    <tr>
-        <td>
-            {%- if mod.steamId != "" and mod.steamId != "0" -%}
-            <a href="https://steamcommunity.com/sharedfiles/filedetails/?id={{- mod.steamId -}}">{{- mod.name -}}</a>
-            {%- else -%}
-            <a
-                href="https://steamcommunity.com/workshop/browse/?appid=294100&searchtext={{- mod.name | url_encode -}}&browsesort=textsearch&section=home">{{- mod.name -}}</a>
-            {%- endif -%}
-        </td>
-        <td>{{- mod.author -}}</td>
-        <td>{{- mod.version -}}</td>
-    </tr>
-    {%- endfor -%}
-</table>
-
-
-
-<script>
-    function filterTable(category) {
-        var input, filter, table, tr, td, i, textValue, column;
-        input = document.getElementById(category + "Input")
-        filter = input.value.toUpperCase();
-        table = document.getElementById(category);
-        tr = table.getElementsByTagName("tr");
-        column = 0;
-
-        if (category == "mod") {
-            if (filter.startsWith("AUTHOR:")) {
-                filter = filter.substring("AUTHOR".length + 1).trimLeft();
-                column = 1;
-            }
-
-            if (filter.startsWith("NAME:")) {
-                filter = filter.substring("NAME".length + 1).trimLeft();
-                column = 0;
-            }
-        }
-
-        for (i = 0; i < tr.length; i++) {
-            td = tr[i].getElementsByTagName("td")[column];
-
-            if (td) {
-                txtValue = td.textContent || td.innerText;
-
-                if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                    tr[i].style.display = "";
-                } else {
-                    tr[i].style.display = "none";
-                }
-            }
-        }
-    }
-</script>
-
-<script src="https://www.kryogenix.org/code/browser/sorttable/sorttable.js"></script>
-
-<style>
-    .search {
-        width: 100%;
-        font-size: 16px;
-        padding: 12px 20px 12px 40px;
-        border: 1px solid #dddddd;
-        margin-bottom: 12px;
-    }
-</style>
+[
+  {
+    "author": "Andreas Pardeike",
+    "name": "Harmony",
+    "steamId": "2009463077",
+    "version": "1.0.2.0"
+  },
+  {
+    "author": "Samboy063",
+    "name": "BetterLoading",
+    "steamId": "1999454301",
+    "version": "2.5.0.0"
+  },
+  {
+    "author": "UnlimitedHugs",
+    "name": "HugsLib",
+    "steamId": "818773962",
+    "version": "7.2.1"
+  },
+  {
+    "author": "Mehni",
+    "name": "4M Mehni's Misc Modifications",
+    "steamId": "1366888108",
+    "version": "1.1.8"
+  },
+  {
+    "author": "Andreas Pardeike",
+    "name": "Achtung!",
+    "steamId": "730936602",
+    "version": "3.0.1.0"
+  },
+  {
+    "author": "UnlimitedHugs",
+    "name": "Allow Tool",
+    "steamId": "761421485",
+    "version": null
+  },
+  {
+    "author": "RelaxedOtter",
+    "name": "Always Reveal Pawn Rewards",
+    "steamId": "2118282272",
+    "version": null
+  },
+  {
+    "author": "Fluffy",
+    "name": "Animal Tab",
+    "steamId": "712141500",
+    "version": "4.6.264"
+  },
+  {
+    "author": "DkPepper",
+    "name": "Anime Tree",
+    "steamId": "2146866252",
+    "version": null
+  },
+  {
+    "author": "Falconne",
+    "name": "Avoid Friendly Fire",
+    "steamId": "1134165362",
+    "version": "0.5.0.0"
+  },
+  {
+    "author": "Fluffy",
+    "name": "Backup Power",
+    "steamId": "2084493662",
+    "version": "1.8.159"
+  },
+  {
+    "author": "dickmosi",
+    "name": "Better Flagstone",
+    "steamId": "2062285094",
+    "version": null
+  },
+  {
+    "author": "The Biomes Mod Team",
+    "name": "Biomes! Core",
+    "steamId": "2038000893",
+    "version": null
+  },
+  {
+    "author": "The Biomes Mod Team",
+    "name": "Biomes! Islands",
+    "steamId": "2038001322",
+    "version": null
+  },
+  {
+    "author": "Fluffy",
+    "name": "Blueprints",
+    "steamId": "708455313",
+    "version": "2.16.131"
+  },
+  {
+    "author": "Fuglypump and Neceros",
+    "name": "Bulk Stonecutting",
+    "steamId": "2021425587",
+    "version": null
+  },
+  {
+    "author": "PorqueNoLosDos (Updated By CrashM)",
+    "name": "CM Color Coded Mood Bar [1.1]",
+    "steamId": "2006605356",
+    "version": "0.0.0.0"
+  },
+  {
+    "author": "Andreas Pardeike",
+    "name": "Camera+",
+    "steamId": "867467808",
+    "version": "2.0.3.0"
+  },
+  {
+    "author": "Neceros",
+    "name": "Ceiling Lights",
+    "steamId": "2014652560",
+    "version": "1.0.0.0"
+  },
+  {
+    "author": "Fluffy",
+    "name": "Colony Manager",
+    "steamId": "715565262",
+    "version": "4.30.605"
+  },
+  {
+    "author": "avilmask",
+    "name": "Common Sense",
+    "steamId": "1561769193",
+    "version": "1.1.23"
+  },
+  {
+    "author": "PeteTimesSix",
+    "name": "Compact Hediffs",
+    "steamId": "2031734067",
+    "version": "1.0.0.0"
+  },
+  {
+    "author": "Torann",
+    "name": "Craftable Plasteel",
+    "steamId": "1229704235",
+    "version": null
+  },
+  {
+    "author": "Misha",
+    "name": "Craftable Royalty Weapons",
+    "steamId": "2019999267",
+    "version": null
+  },
+  {
+    "author": "jecrell",
+    "name": "JecsTools",
+    "steamId": "932008009",
+    "version": "1.1.1.2"
+  },
+  {
+    "author": "Torann",
+    "name": "CustomDeathRandomness",
+    "steamId": "1464742390",
+    "version": "1.1.2.1"
+  },
+  {
+    "author": "Spdskatr, CaesarV6",
+    "name": "Damage Indicators [1.1]",
+    "steamId": "2016331497",
+    "version": "1.0.0.0"
+  },
+  {
+    "author": "Linq",
+    "name": "Death Rattle Unofficial",
+    "steamId": "2013400235",
+    "version": null
+  },
+  {
+    "author": "Feffelicious, Dingo",
+    "name": "Deep Ore Identifier",
+    "steamId": "1419872425",
+    "version": "1.1.7364.1"
+  },
+  {
+    "author": "UnlimitedHugs",
+    "name": "Defensive Positions",
+    "steamId": "761219125",
+    "version": null
+  },
+  {
+    "author": "joe_the_tech",
+    "name": "Disable Sappers",
+    "steamId": "1638376324",
+    "version": null
+  },
+  {
+    "author": "Dr_Zhivago",
+    "name": "DocPawnOverhaul",
+    "steamId": "1975381493",
+    "version": "1.1.0.3"
+  },
+  {
+    "author": "Onyxae",
+    "name": "Dragon's Descent",
+    "steamId": "2026992161",
+    "version": null
+  },
+  {
+    "author": "czpetr",
+    "name": "Drugs are not Food",
+    "steamId": "1531640632",
+    "version": null
+  },
+  {
+    "author": "Dubwise",
+    "name": "Dubs Mint Menus",
+    "steamId": "1446523594",
+    "version": "1.2.644"
+  },
+  {
+    "author": "Dubwise",
+    "name": "Dubs Mint Minimap",
+    "steamId": "1662119905",
+    "version": "1.3.450"
+  },
+  {
+    "author": "Dubwise",
+    "name": "Dubs Performance Analyzer",
+    "steamId": "2038874626",
+    "version": "1.0.0"
+  },
+  {
+    "author": "Jaxxa",
+    "name": "ED-Embrasures",
+    "steamId": "722085442",
+    "version": "1.0.0.0"
+  },
+  {
+    "author": "Victorique, Aurani, Tarojun",
+    "name": "Expanded Prosthetics and Organ Engineering - Forked",
+    "steamId": "1949064302",
+    "version": "3.3.4"
+  },
+  {
+    "author": "Victorique, Aurani, Tarojun",
+    "name": "EPOE-Forked: Royalty DLC expansion",
+    "steamId": "2008970276",
+    "version": null
+  },
+  {
+    "author": "EdB",
+    "name": "EdB Prepare Carefully",
+    "steamId": "735106432",
+    "version": "1.1.9"
+  },
+  {
+    "author": "Zyrixion",
+    "name": "Enhanced Raiders 1.1",
+    "steamId": "1579186918",
+    "version": null
+  },
+  {
+    "author": "Uuugggg",
+    "name": "Everybody Gets One",
+    "steamId": "1687566130",
+    "version": "1.0.0.0"
+  },
+  {
+    "author": "Why_is_that",
+    "name": "Expanded Roofing",
+    "steamId": "2026595894",
+    "version": "1.0.2"
+  },
+  {
+    "author": "latta",
+    "name": "FSharp.Core",
+    "steamId": "2059725183",
+    "version": "4.8.1"
+  },
+  {
+    "author": "Mlie",
+    "name": "Fallout Traits (Continued)",
+    "steamId": "2016437642",
+    "version": "1.0.4.0"
+  },
+  {
+    "author": "Mlie",
+    "name": "Food Alert (Continued)",
+    "steamId": "2017538067",
+    "version": "1.0.6.0"
+  },
+  {
+    "author": "Sam",
+    "name": "Glitter Tech",
+    "steamId": "725576127",
+    "version": null
+  },
+  {
+    "author": "avilmask",
+    "name": "Grazing Lands",
+    "steamId": "1770268130",
+    "version": "1.0.0.0"
+  },
+  {
+    "author": "Dingo",
+    "name": "Grenade Fix: Rearmed",
+    "steamId": "797360572",
+    "version": "1.1.7364.1"
+  },
+  {
+    "author": "AUTOMATIC",
+    "name": "Gunplay",
+    "steamId": "2034896549",
+    "version": "1.0.379.0018"
+  },
+  {
+    "author": "YAYO",
+    "name": "Yayo's Combat 3",
+    "steamId": "2038409475",
+    "version": null
+  },
+  {
+    "author": "erdelf",
+    "name": "Humanoid Alien Races 2.0",
+    "steamId": "839005762",
+    "version": "1.0.0.0"
+  },
+  {
+    "author": "Orion",
+    "name": "Hospitality",
+    "steamId": "753498552",
+    "version": "1.1.12"
+  },
+  {
+    "author": "Murmur",
+    "name": "Infestations Spawn in Darkness",
+    "steamId": "2017514331",
+    "version": "1.0.0.0"
+  },
+  {
+    "author": "Catachat",
+    "name": "Inspiration Tweaks",
+    "steamId": "2117570018",
+    "version": "1.0.0.0"
+  },
+  {
+    "author": "Jaxe",
+    "name": "Interaction Bubbles",
+    "steamId": "1516158345",
+    "version": null
+  },
+  {
+    "author": "DarkFlame7",
+    "name": "Job In Bar",
+    "steamId": "2086300611",
+    "version": "1.0.0.0"
+  },
+  {
+    "author": "CodeOptimist",
+    "name": "Jobs of Opportunity (While You're Up)",
+    "steamId": "2034960453",
+    "version": null
+  },
+  {
+    "author": "Serpyderpy",
+    "name": "Jurassic Rimworld - Dinosaurs Only 1.1",
+    "steamId": "1804979738",
+    "version": null
+  },
+  {
+    "author": "Falconne",
+    "name": "Labels on Floor",
+    "steamId": "1408863965",
+    "version": null
+  },
+  {
+    "author": "krafs",
+    "name": "Level Up!",
+    "steamId": "1701592470",
+    "version": "1.0.0"
+  },
+  {
+    "author": "Zylle",
+    "name": "Map Designer",
+    "steamId": "2111424996",
+    "version": "1.0.0.0"
+  },
+  {
+    "author": "UnlimitedHugs",
+    "name": "Map Reroll",
+    "steamId": "761315214",
+    "version": null
+  },
+  {
+    "author": "NoImageAvailable",
+    "name": "Mass Graves",
+    "steamId": "1542386771",
+    "version": "1.0.0.0"
+  },
+  {
+    "author": "Fluffy",
+    "name": "Medical Tab",
+    "steamId": "715565817",
+    "version": "3.3.90"
+  },
+  {
+    "author": "Neceros",
+    "name": "Metal Don't Burn",
+    "steamId": "2022726345",
+    "version": null
+  },
+  {
+    "author": "Haplo",
+    "name": "Miscellaneous 'CORE'",
+    "steamId": "704181221",
+    "version": "1.1.1"
+  },
+  {
+    "author": "Haplo",
+    "name": "Misc. Robots",
+    "steamId": "724602224",
+    "version": "1.1.7"
+  },
+  {
+    "author": "Alaestor",
+    "name": "Misc. Robots++",
+    "steamId": "747645520",
+    "version": null
+  },
+  {
+    "author": "Haplo",
+    "name": "Misc. Training",
+    "steamId": "717575199",
+    "version": "1.1.2"
+  },
+  {
+    "author": "Moloy559",
+    "name": "Moloy Traits",
+    "steamId": "1777036482",
+    "version": null
+  },
+  {
+    "author": "AsG_Alligator",
+    "name": "Monster Hunter RimWorld",
+    "steamId": "2001260604",
+    "version": "1.0.0.0"
+  },
+  {
+    "author": "Neceros",
+    "name": "More Components",
+    "steamId": "1254970979",
+    "version": "1.0.0.0"
+  },
+  {
+    "author": "Versengt",
+    "name": "More Trade Ships",
+    "steamId": "2006960340",
+    "version": null
+  },
+  {
+    "author": "TargetDrone",
+    "name": "MoreBulkProduction",
+    "steamId": "1576487741",
+    "version": null
+  },
+  {
+    "author": "Hob Took",
+    "name": "Mortar Accuracy",
+    "steamId": "1729446857",
+    "version": "1.0.0.0"
+  },
+  {
+    "author": "RadZerp",
+    "name": "Natural Paths",
+    "steamId": "2008833499",
+    "version": null
+  },
+  {
+    "author": "Ben",
+    "name": "No God! Please No!",
+    "steamId": "2076610321",
+    "version": null
+  },
+  {
+    "author": "Doug",
+    "name": "No Job Authors",
+    "steamId": "2009825774",
+    "version": null
+  },
+  {
+    "author": "Paragon",
+    "name": "NoArmorPointCap",
+    "steamId": "1695493009",
+    "version": null
+  },
+  {
+    "author": "Mehni",
+    "name": "Numbers",
+    "steamId": "1414302321",
+    "version": "1.0.4"
+  },
+  {
+    "author": "Ogre",
+    "name": "OgreStack",
+    "steamId": "1447140290",
+    "version": "1.0.0.0"
+  },
+  {
+    "author": "Dr_Zhivago",
+    "name": "Old Difficulty",
+    "steamId": "2111263245",
+    "version": null
+  },
+  {
+    "author": "Nales",
+    "name": "Overcapped Accuracy",
+    "steamId": "1624094549",
+    "version": "1.0.0.0"
+  },
+  {
+    "author": "Kiame Vivacity",
+    "name": "[KV] RimFridge - 1.1",
+    "steamId": "1180721235",
+    "version": "1.1.0.1"
+  },
+  {
+    "author": "Little White Mouse",
+    "name": "LWM's Deep Storage",
+    "steamId": "1617282896",
+    "version": "1.1.0.10"
+  },
+  {
+    "author": "Mehni",
+    "name": "Pick Up And Haul",
+    "steamId": "1279012058",
+    "version": null
+  },
+  {
+    "author": "Reiquard",
+    "name": "PreciseTime",
+    "steamId": "2047591704",
+    "version": null
+  },
+  {
+    "author": "æ°‘ç«",
+    "name": "Predator Hunt Alert",
+    "steamId": "1537786185",
+    "version": "1.0.0.0"
+  },
+  {
+    "author": "dninemfive",
+    "name": "Quality Cooldown",
+    "steamId": "1543069597",
+    "version": null
+  },
+  {
+    "author": "Hatti",
+    "name": "QualityBuilder",
+    "steamId": "754637870",
+    "version": "1.0.14"
+  },
+  {
+    "author": "FLASHPOINT55",
+    "name": "RPG Style Level Up Mod",
+    "steamId": "1995668415",
+    "version": "1.0.0.0"
+  },
+  {
+    "author": "Ratys",
+    "name": "RT Fuse",
+    "steamId": "728314182",
+    "version": "1.1.3.0"
+  },
+  {
+    "author": "aRandomKiwi",
+    "name": "Raids For Me",
+    "steamId": "1633517937",
+    "version": "1.0.4.0"
+  },
+  {
+    "author": "mastertea",
+    "name": "RandomPlus",
+    "steamId": "1434137894",
+    "version": null
+  },
+  {
+    "author": "mr.teterew",
+    "name": "Real Ruins",
+    "steamId": "1552146295",
+    "version": "2.1.0.0"
+  },
+  {
+    "author": "Oskar Potocki, Trunken",
+    "name": "Vanilla Weapons Expanded",
+    "steamId": "1814383360",
+    "version": "1.0.5.0"
+  },
+  {
+    "author": "Primus the Conquerer",
+    "name": "Rebalanced Charge Weapons (Vanilla Weapons Expanded)",
+    "steamId": "2076386540",
+    "version": "1.2.0"
+  },
+  {
+    "author": "Neceros",
+    "name": "Reinforced Walls",
+    "steamId": "1929389479",
+    "version": "1.0.0.0"
+  },
+  {
+    "author": "Nales",
+    "name": "Reliable Armors",
+    "steamId": "1624115509",
+    "version": "1.0.0.0"
+  },
+  {
+    "author": "Uuugggg",
+    "name": "Replace Stuff",
+    "steamId": "1372003680",
+    "version": "1.0.0.0"
+  },
+  {
+    "author": "Fluffy",
+    "name": "Research Tree",
+    "steamId": "1266570759",
+    "version": "3.17.533"
+  },
+  {
+    "author": "Cabbage",
+    "name": "RimCities - Citadel Update",
+    "steamId": "1775170117",
+    "version": "1.0.0.0"
+  },
+  {
+    "author": "Jaxe",
+    "name": "RimHUD",
+    "steamId": "1508850027",
+    "version": null
+  },
+  {
+    "author": "Dubwise",
+    "name": "Rimefeller",
+    "steamId": "1321849735",
+    "version": "1.2.774"
+  },
+  {
+    "author": "rooki1",
+    "name": "Rimsenal - Enhanced Vanilla Pack",
+    "steamId": "849231601",
+    "version": null
+  },
+  {
+    "author": "rooki1",
+    "name": "Rimsenal - Federation Faction Pack",
+    "steamId": "736172213",
+    "version": null
+  },
+  {
+    "author": "rooki1",
+    "name": "Rimsenal - Feral Faction Pack",
+    "steamId": "736207111",
+    "version": null
+  },
+  {
+    "author": "rooki1",
+    "name": "Rimsenal - Core",
+    "steamId": "725947920",
+    "version": null
+  },
+  {
+    "author": "rooki1",
+    "name": "Rimsenal - Security pack",
+    "steamId": "736139206",
+    "version": null
+  },
+  {
+    "author": "rooki1",
+    "name": "Rimsenal - Storyteller pack",
+    "steamId": "725952322",
+    "version": null
+  },
+  {
+    "author": "Dr_Zhivago",
+    "name": "Rolling Table",
+    "steamId": "935099161",
+    "version": "1.1.1.0"
+  },
+  {
+    "author": "Roolo",
+    "name": "RunAndGun",
+    "steamId": "1204108550",
+    "version": null
+  },
+  {
+    "author": "user19990313",
+    "name": "RuntimeGC",
+    "steamId": "2046596586",
+    "version": "20.0.15.1"
+  },
+  {
+    "author": "Roolo",
+    "name": "Search and Destroy",
+    "steamId": "1467764609",
+    "version": null
+  },
+  {
+    "author": "targhetti",
+    "name": "Show Draftees Weapon",
+    "steamId": "1690978457",
+    "version": "1.0.0.0"
+  },
+  {
+    "author": "erdelf",
+    "name": "ShowModDesignators",
+    "steamId": "1399212509",
+    "version": null
+  },
+  {
+    "author": "PinoChemicali",
+    "name": "Skilled Stonecutting",
+    "steamId": "1207390617",
+    "version": null
+  },
+  {
+    "author": "Beast",
+    "name": "Slow Starvation",
+    "steamId": "2068523117",
+    "version": null
+  },
+  {
+    "author": "Uuugggg",
+    "name": "Smart Medicine",
+    "steamId": "1309994319",
+    "version": "1.0.0.0"
+  },
+  {
+    "author": "Weilbyte",
+    "name": "Snap Out!",
+    "steamId": "1319782555",
+    "version": "1.6.0"
+  },
+  {
+    "author": "Linkolas",
+    "name": "Stabilize",
+    "steamId": "2023407836",
+    "version": null
+  },
+  {
+    "author": "EarthyTurtle, zhrocks",
+    "name": "Stackable Chunks",
+    "steamId": "1619558325",
+    "version": null
+  },
+  {
+    "author": "zlj",
+    "name": "Static Quality Plus 1.2.2",
+    "steamId": "737358776",
+    "version": "1.2.2.0"
+  },
+  {
+    "author": "Neceros",
+    "name": "Stop Insulting Us!",
+    "steamId": "2014883505",
+    "version": null
+  },
+  {
+    "author": "YAYO (Original by D A)",
+    "name": "Suppression",
+    "steamId": "2016866580",
+    "version": null
+  },
+  {
+    "author": "ChJees",
+    "name": "Supreme Melee",
+    "steamId": "1841138974",
+    "version": "1.0.0.0"
+  },
+  {
+    "author": "RSev",
+    "name": "Synergistic Traits",
+    "steamId": "2102438871",
+    "version": null
+  },
+  {
+    "author": "Saint Aku",
+    "name": "Tables+",
+    "steamId": "963265186",
+    "version": null
+  },
+  {
+    "author": "GwinnBleidd",
+    "name": "Technology Blueprints & Reverse Engineering",
+    "steamId": "2010527094",
+    "version": "1.2.7.1"
+  },
+  {
+    "author": "Agracore",
+    "name": "Textiles+(continued)",
+    "steamId": "2095650910",
+    "version": null
+  },
+  {
+    "author": "Uuugggg",
+    "name": "Thick Armor",
+    "steamId": "1321600671",
+    "version": "1.0.0.0"
+  },
+  {
+    "author": "Sam",
+    "name": "Tilled Soil",
+    "steamId": "725747149",
+    "version": null
+  },
+  {
+    "author": "Nales",
+    "name": "Time-Based Dangers",
+    "steamId": "1624131230",
+    "version": "1.0.0.0"
+  },
+  {
+    "author": "hodlhodl",
+    "name": "ToolkitCore",
+    "steamId": "2018368654",
+    "version": "1.0.0.0"
+  },
+  {
+    "author": "hodlhodl",
+    "name": "Twitch Toolkit",
+    "steamId": "1718525787",
+    "version": "2.0.10.0"
+  },
+  {
+    "author": "swemoney",
+    "name": "Toolkit - Channel Points",
+    "steamId": "1916651243",
+    "version": "1.2.0"
+  },
+  {
+    "author": "SirRandoo",
+    "name": "ToolkitRaids",
+    "steamId": "0",
+    "version": "1.0.1.2"
+  },
+  {
+    "author": "SirRandoo",
+    "name": "ToolkitUtils",
+    "steamId": "0",
+    "version": "4.0.7.0"
+  },
+  {
+    "author": "Smash Phil",
+    "name": "Trade Ships Drop Spot",
+    "steamId": "1969732297",
+    "version": "1.0.0"
+  },
+  {
+    "author": "Neceros",
+    "name": "Traders Have Money",
+    "steamId": "2022959333",
+    "version": null
+  },
+  {
+    "author": "Carny Senpai",
+    "name": "Trait Rarity Colors",
+    "steamId": "1751884355",
+    "version": "1.0.0.1"
+  },
+  {
+    "author": "hodlhodl",
+    "name": "TwitchToolkit - Lootboxes",
+    "steamId": "1720021578",
+    "version": "1.0.0.0"
+  },
+  {
+    "author": "Syrchalis",
+    "name": "[SYR] Harvest Yield",
+    "steamId": "1461790308",
+    "version": null
+  },
+  {
+    "author": "Grimm",
+    "name": "Un-Limited",
+    "steamId": "1668141382",
+    "version": "0.1.2.4"
+  },
+  {
+    "author": "Lord Revonworc",
+    "name": "Uninstall Rimworld",
+    "steamId": "2018899948",
+    "version": null
+  },
+  {
+    "author": "Syrchalis",
+    "name": "[SYR] Universal Fermenter",
+    "steamId": "2073225100",
+    "version": "1.0.0.0"
+  },
+  {
+    "author": "dismarzero",
+    "name": "VGP Vegetable Garden",
+    "steamId": "2007061826",
+    "version": null
+  },
+  {
+    "author": "dismarzero",
+    "name": "VGP Garden Gourmet",
+    "steamId": "2007062982",
+    "version": null
+  },
+  {
+    "author": "dismarzero",
+    "name": "VGP Garden Medicine",
+    "steamId": "2007063140",
+    "version": null
+  },
+  {
+    "author": "dismarzero",
+    "name": "VGP More Veggies",
+    "steamId": "2007063278",
+    "version": null
+  },
+  {
+    "author": "Oskar Potocki",
+    "name": "Vanilla Animals Expanded â€” Arid Shrubland",
+    "steamId": "1836900626",
+    "version": "1.1.0"
+  },
+  {
+    "author": "Oskar Potocki, Sarg Bjornson",
+    "name": "Vanilla Animals Expanded â€” Australia",
+    "steamId": "1963681588",
+    "version": "1.0.2"
+  },
+  {
+    "author": "Oskar Potocki, Sarg Bjornson",
+    "name": "Vanilla Animals Expanded â€” Boreal Forest",
+    "steamId": "1895364938",
+    "version": "1.0.0"
+  },
+  {
+    "author": "Oskar Potocki",
+    "name": "Vanilla Animals Expanded â€” Cats and Dogs",
+    "steamId": "1823540489",
+    "version": "1.0.1"
+  },
+  {
+    "author": "Oskar Potocki",
+    "name": "Vanilla Animals Expanded â€” Desert",
+    "steamId": "1849183875",
+    "version": "1.0.0"
+  },
+  {
+    "author": "Oskar Potocki",
+    "name": "Vanilla Animals Expanded â€” Extreme Desert",
+    "steamId": "1849184079",
+    "version": "1.0.0"
+  },
+  {
+    "author": "Oskar Potocki, Sarg Bjornson",
+    "name": "Vanilla Animals Expanded â€” Ice Sheet",
+    "steamId": "1895364782",
+    "version": "1.0.1"
+  },
+  {
+    "author": "Oskar Potocki, Sarg Bjornson",
+    "name": "Vanilla Animals Expanded â€” Tropical Rainforest",
+    "steamId": "1907283872",
+    "version": "1.0.2"
+  },
+  {
+    "author": "Oskar Potocki, Sarg Bjornson",
+    "name": "Vanilla Animals Expanded â€” Tropical Swamp",
+    "steamId": "1907283935",
+    "version": "1.0.1"
+  },
+  {
+    "author": "Oskar Potocki, Sarg Bjornson",
+    "name": "Vanilla Animals Expanded â€” Tundra",
+    "steamId": "1895364585",
+    "version": "1.0.3"
+  },
+  {
+    "author": "Oskar Potocki, Trunken",
+    "name": "Vanilla Apparel Expanded",
+    "steamId": "1814987817",
+    "version": "1.2.0"
+  },
+  {
+    "author": "Oskar Potocki, Trunken",
+    "name": "Vanilla Armour Expanded",
+    "steamId": "1814988282",
+    "version": "1.2.0"
+  },
+  {
+    "author": "Oskar Potocki, Sarg Bjornson, Chowder",
+    "name": "Vanilla Cooking Expanded",
+    "steamId": "2134308519",
+    "version": null
+  },
+  {
+    "author": "Oskar Potocki, Sarg Bjornson, Chowder",
+    "name": "Vanilla Cooking Expanded - Stews",
+    "steamId": "2134312965",
+    "version": null
+  },
+  {
+    "author": "Oskar Potocki, Kikohi, Helixien",
+    "name": "Vanilla Events Expanded",
+    "steamId": "1938420742",
+    "version": "1.1.0"
+  },
+  {
+    "author": "Oskar Potocki, XeoNovaDan",
+    "name": "Vanilla Factions Expanded - Core",
+    "steamId": "2023507013",
+    "version": "1.1.5.0"
+  },
+  {
+    "author": "Oskar Potocki, Kikohi, Sarg Bjornson",
+    "name": "Vanilla Factions Expanded - Insectoids",
+    "steamId": "2149755445",
+    "version": "1.0.0.0"
+  },
+  {
+    "author": "Oskar Potocki, LimeTreeSnake, Kikohi",
+    "name": "Vanilla Factions Expanded - Settlers",
+    "steamId": "2052918119",
+    "version": "1.1.0.0"
+  },
+  {
+    "author": "Oskar Potocki, Sarg Bjornson",
+    "name": "Vanilla Fishing Expanded",
+    "steamId": "1914064942",
+    "version": "1.0.0.0"
+  },
+  {
+    "author": "OskarPotocki, Atlas, Kikohi",
+    "name": "Vanilla Furniture Expanded",
+    "steamId": "1718190143",
+    "version": "1.1.0"
+  },
+  {
+    "author": "Oskar Potocki",
+    "name": "Vanilla Furniture Expanded - Art",
+    "steamId": "1968134023",
+    "version": "1.0.3"
+  },
+  {
+    "author": "Oskar Potocki, dninemfive, Kikohi",
+    "name": "Vanilla Furniture Expanded - Farming",
+    "steamId": "1957158779",
+    "version": "1.0.1.0"
+  },
+  {
+    "author": "OskarPotocki, Atlas, Kikohi",
+    "name": "Vanilla Furniture Expanded - Medical Module",
+    "steamId": "1718191613",
+    "version": "1.1.0"
+  },
+  {
+    "author": "Oskar Potocki, Sarg Bjornson",
+    "name": "Vanilla Furniture Expanded - Power",
+    "steamId": "2062943477",
+    "version": "1.0.0.0"
+  },
+  {
+    "author": "Oskar Potocki, Trunken",
+    "name": "Vanilla Furniture Expanded - Production",
+    "steamId": "1880253632",
+    "version": "1.0.3.0"
+  },
+  {
+    "author": "Oskar Potocki, Trunken, XeoNovaDan",
+    "name": "Vanilla Furniture Expanded - Security",
+    "steamId": "1845154007",
+    "version": "1.1.1.0"
+  },
+  {
+    "author": "OskarPotocki, Atlas, Kikohi",
+    "name": "Vanilla Furniture Expanded - Spacer Module",
+    "steamId": "2028381079",
+    "version": null
+  },
+  {
+    "author": "Oskar Potocki, XeoNovaDan",
+    "name": "Vanilla Hair Expanded",
+    "steamId": "1888705256",
+    "version": "1.0.3"
+  },
+  {
+    "author": "Oskar Potocki, Sarg Bjornson, Chowder",
+    "name": "Vanilla Plants Expanded",
+    "steamId": "2134308522",
+    "version": null
+  },
+  {
+    "author": "Oskar Potocki",
+    "name": "Vanilla Weapons Expanded - Laser",
+    "steamId": "1989352844",
+    "version": "1.1.0"
+  },
+  {
+    "author": "Oskar Potocki",
+    "name": "Vanilla Weapons Expanded - Quickdraw",
+    "steamId": "1906780517",
+    "version": "1.1.0"
+  },
+  {
+    "author": "æ°‘ç«",
+    "name": "Where is my weapon?",
+    "steamId": "1539028008",
+    "version": "1.0.0.0"
+  },
+  {
+    "author": "Fluffy",
+    "name": "Work Tab",
+    "steamId": "725219116",
+    "version": "3.20.302"
+  },
+  {
+    "author": "YAYO, IVING",
+    "name": "Yayo's Shooting 2",
+    "steamId": "2020785943",
+    "version": null
+  },
+  {
+    "author": "Chicken Plucker",
+    "name": "[CP] Rimmu-Nation - Clothing",
+    "steamId": "1541536041",
+    "version": null
+  },
+  {
+    "author": "Chicken Plucker",
+    "name": "[CP] Rimmu-Nation - Security",
+    "steamId": "2011774401",
+    "version": null
+  },
+  {
+    "author": "Chicken Plucker",
+    "name": "[CP] Rimmu-Nation - Weapons",
+    "steamId": "1608498683",
+    "version": null
+  },
+  {
+    "author": "Dametri",
+    "name": "[D] Interests Framework",
+    "steamId": "2089927321",
+    "version": "1.0.0.0"
+  },
+  {
+    "author": "Dametri",
+    "name": "[D] Interests",
+    "steamId": "2089938084",
+    "version": "1.0.0.0"
+  },
+  {
+    "author": "Dametri",
+    "name": "[D] Time Control",
+    "steamId": "2109225757",
+    "version": "1.0.0.0"
+  },
+  {
+    "author": "Crlsniper",
+    "name": "Realistic Rooms",
+    "steamId": "848972794",
+    "version": null
+  },
+  {
+    "author": "FrozenSnowFox",
+    "name": "[FSF] Filth Vanishes With Rain And Time",
+    "steamId": "1508341791",
+    "version": null
+  },
+  {
+    "author": "JangoD'soul",
+    "name": "[JDS] Simply Storage",
+    "steamId": "1961098970",
+    "version": "1.0.7"
+  },
+  {
+    "author": "JangoD'soul",
+    "name": "[JDS] Simply Storage - Refrigeration",
+    "steamId": "2029207212",
+    "version": null
+  },
+  {
+    "author": "Rainbeau Flambe (original) & Kiame Vivacity",
+    "name": "[KV] Consolidated Traits - 1.1",
+    "steamId": "1507384362",
+    "version": null
+  },
+  {
+    "author": "Rainbeau Flambe (original) & Kiame Vivacity",
+    "name": "[KV] More Trait Slots - 1.1",
+    "steamId": "1508292711",
+    "version": "1.0.7383.37601"
+  },
+  {
+    "author": "Kiame Vivacity",
+    "name": "[KV] Trading Spot - 1.1",
+    "steamId": "1180719658",
+    "version": "1.0.0.0"
+  },
+  {
+    "author": "Nals",
+    "name": "[NL] Facial Animation - WIP",
+    "steamId": "1635901197",
+    "version": null
+  },
+  {
+    "author": "Shotgunfrenzy",
+    "name": "[SF] Priority treatment 1.1",
+    "steamId": "2012586738",
+    "version": null
+  },
+  {
+    "author": "Syrchalis",
+    "name": "[SYR] Glowing Healroot",
+    "steamId": "1517921835",
+    "version": null
+  },
+  {
+    "author": "Syrchalis",
+    "name": "[SYR] Individuality",
+    "steamId": "1497105115",
+    "version": "1.0.0.0"
+  },
+  {
+    "author": "Syrchalis",
+    "name": "[SYR] Light Radius",
+    "steamId": "1520756475",
+    "version": "1.0.0.0"
+  },
+  {
+    "author": "Syrchalis",
+    "name": "[SYR] Set Up Camp",
+    "steamId": "1470065926",
+    "version": "1.0.0.0"
+  },
+  {
+    "author": "Syrchalis",
+    "name": "[SYR] Stone Rebalance",
+    "steamId": "1544076093",
+    "version": null
+  },
+  {
+    "author": "Wemd",
+    "name": "[WD] Simple Concrete",
+    "steamId": "1573465547",
+    "version": null
+  },
+  {
+    "author": "XeoNovaDan",
+    "name": "[XND] Proper Shotguns",
+    "steamId": "1438488634",
+    "version": "1.2.0.0"
+  }
+]
