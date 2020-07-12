@@ -1,962 +1,3479 @@
 {
-    "traits": [
-        {
-            "addPrice": 3500,
-            "bypassLimit": false,
-            "canAdd": true,
-            "canRemove": true,
-            "conflicts": [],
-            "defName": "Abrasive",
-            "degree": 0,
-            "description": "{PAWN_nameDef} always says exactly what's on {PAWN_possessive} mind, especially if it's bugging {PAWN_objective}. That tends to rub people the wrong way.",
-            "name": "abrasive",
-            "removePrice": 5500,
-            "stats": []
-        },
-        {
-            "addPrice": 3500,
-            "bypassLimit": false,
-            "canAdd": true,
-            "canRemove": true,
-            "conflicts": [],
-            "defName": "AnnoyingVoice",
-            "degree": 0,
-            "description": "{PAWN_nameDef}'s voice has a particularly grating, nasal quality to it, and {PAWN_pronoun} tends to talk in barked, garbled phrases. This predisposes others to dislike {PAWN_objective}.",
-            "name": "annoying voice",
-            "removePrice": 5500,
-            "stats": []
-        },
-        {
-            "addPrice": 3500,
-            "bypassLimit": false,
-            "canAdd": true,
-            "canRemove": true,
-            "conflicts": [
-                "Greedy",
-                "Jealous",
-                "Gourmand"
-            ],
-            "defName": "Ascetic",
-            "degree": 0,
-            "description": "{PAWN_nameDef} has forsaken physical comforts and enjoyments in favor of a simple, pure lifestyle. {PAWN_pronoun} will become unhappy if if {PAWN_pronoun} has a bedroom that's too impressive. {PAWN_pronoun} also dislikes fancy food and prefers to eat raw. {PAWN_pronoun} never judges others by their appearance.",
-            "name": "ascetic",
-            "removePrice": 5500,
-            "stats": []
-        },
-        {
-            "addPrice": 3500,
-            "bypassLimit": true,
-            "canAdd": true,
-            "canRemove": true,
-            "conflicts": [],
-            "defName": "Asexual",
-            "degree": 0,
-            "description": "{PAWN_nameDef} has no sexual attraction to anyone at all.",
-            "name": "asexual",
-            "removePrice": 5500,
-            "stats": []
-        },
-        {
-            "addPrice": 3500,
-            "bypassLimit": false,
-            "canAdd": true,
-            "canRemove": true,
-            "conflicts": [],
-            "defName": "Beauty",
-            "degree": -1,
-            "description": "[PAWN_nameDef] is somewhat ugly. This subtly repels others during social interactions.",
-            "name": "ugly",
-            "removePrice": 5500,
-            "stats": [
-                "-1.0 Beauty"
-            ]
-        },
-        {
-            "addPrice": 3500,
-            "bypassLimit": false,
-            "canAdd": true,
-            "canRemove": true,
-            "conflicts": [],
-            "defName": "Beauty",
-            "degree": -2,
-            "description": "[PAWN_nameDef] is staggeringly ugly. [PAWN_possessive] face looks like a cross between a drawing by an untalented child, a malformed fetus in a jar of formaldehyde, and a piece of modern art. Others must exert conscious effort to look at [PAWN_objective] while conversing.",
-            "name": "staggeringly ugly",
-            "removePrice": 5500,
-            "stats": [
-                "-2.0 Beauty"
-            ]
-        },
-        {
-            "addPrice": 3500,
-            "bypassLimit": false,
-            "canAdd": true,
-            "canRemove": true,
-            "conflicts": [],
-            "defName": "Beauty",
-            "degree": 1,
-            "description": "[PAWN_nameDef] has a pretty face, which predisposes people to like [PAWN_objective].",
-            "name": "pretty",
-            "removePrice": 5500,
-            "stats": [
-                "+1.0 Beauty"
-            ]
-        },
-        {
-            "addPrice": 3500,
-            "bypassLimit": false,
-            "canAdd": true,
-            "canRemove": true,
-            "conflicts": [],
-            "defName": "Beauty",
-            "degree": 2,
-            "description": "[PAWN_nameDef] is exceptionally beautiful, with an exotic-yet-familiar facial structure and an arresting gaze. People are attracted to [PAWN_objective] before [PAWN_pronoun] even opens [PAWN_possessive] mouth.",
-            "name": "beautiful",
-            "removePrice": 5500,
-            "stats": [
-                "+2.0 Beauty"
-            ]
-        },
-        {
-            "addPrice": 3500,
-            "bypassLimit": true,
-            "canAdd": true,
-            "canRemove": true,
-            "conflicts": [],
-            "defName": "Bisexual",
-            "degree": 0,
-            "description": "{PAWN_nameDef} is romantically attracted to both men and women.",
-            "name": "bisexual",
-            "removePrice": 5500,
-            "stats": []
-        },
-        {
-            "addPrice": 3500,
-            "bypassLimit": false,
-            "canAdd": true,
-            "canRemove": true,
-            "conflicts": [],
-            "defName": "Bloodlust",
-            "degree": 0,
-            "description": "{PAWN_nameDef} gets a rush from hurting people, and never minds the sight of blood or death. {PAWN_pronoun} is four times as likely to start a social fight as others.",
-            "name": "bloodlust",
-            "removePrice": 5500,
-            "stats": []
-        },
-        {
-            "addPrice": 3500,
-            "bypassLimit": false,
-            "canAdd": true,
-            "canRemove": true,
-            "conflicts": [
-                "Transhumanist"
-            ],
-            "defName": "BodyPurist",
-            "degree": 0,
-            "description": "{PAWN_nameDef} believes the human body is limited for a reason. To {PAWN_objective}, artificial body parts are unethical and disgusting.",
-            "name": "body purist",
-            "removePrice": 5500,
-            "stats": []
-        },
-        {
-            "addPrice": 3500,
-            "bypassLimit": false,
-            "canAdd": true,
-            "canRemove": true,
-            "conflicts": [
-                "ShootingAccuracy",
-                "Wimp"
-            ],
-            "defName": "Brawler",
-            "degree": 0,
-            "description": "{PAWN_nameDef} likes to fight up close and personal. {PAWN_possessive} accuracy is greatly increased in melee combat, but {PAWN_pronoun}'ll be very unhappy if asked to carry a ranged weapon.",
-            "name": "brawler",
-            "removePrice": 5500,
-            "stats": [
-                "+4.0 Melee hit chance"
-            ]
-        },
-        {
-            "addPrice": 3500,
-            "bypassLimit": false,
-            "canAdd": true,
-            "canRemove": true,
-            "conflicts": [],
-            "defName": "Cannibal",
-            "degree": 0,
-            "description": "{PAWN_nameDef} was taught that eating human meat is wrong and horrible. But one time, long ago, {PAWN_pronoun} tried it... and {PAWN_pronoun} liked it.",
-            "name": "cannibal",
-            "removePrice": 5500,
-            "stats": []
-        },
-        {
-            "addPrice": 3500,
-            "bypassLimit": false,
-            "canAdd": true,
-            "canRemove": true,
-            "conflicts": [],
-            "defName": "CreepyBreathing",
-            "degree": 0,
-            "description": "{PAWN_nameDef} breathes heavily all the time, and sweats constantly. People find it creepy.",
-            "name": "creepy breathing",
-            "removePrice": 5500,
-            "stats": []
-        },
-        {
-            "addPrice": 3500,
-            "bypassLimit": false,
-            "canAdd": true,
-            "canRemove": true,
-            "conflicts": [],
-            "defName": "DislikesMen",
-            "degree": 0,
-            "description": "{PAWN_nameDef} really dislikes and distrusts men.",
-            "name": "misandrist",
-            "removePrice": 5500,
-            "stats": []
-        },
-        {
-            "addPrice": 3500,
-            "bypassLimit": false,
-            "canAdd": true,
-            "canRemove": true,
-            "conflicts": [],
-            "defName": "DislikesWomen",
-            "degree": 0,
-            "description": "{PAWN_nameDef} really dislikes and distrusts women.",
-            "name": "misogynist",
-            "removePrice": 5500,
-            "stats": []
-        },
-        {
-            "addPrice": 3500,
-            "bypassLimit": false,
-            "canAdd": true,
-            "canRemove": true,
-            "conflicts": [],
-            "defName": "DrugDesire",
-            "degree": 2,
-            "description": "[PAWN_nameDef] is utterly fascinated with chemical sources of enjoyment. Consuming recreational drugs will create a good mood, while abstaining will lead to increasing frustration over time and possibly drug binges. [PAWN_pronoun] will ignore directives to not use recreational drugs, and will consume more than a normal person.",
-            "name": "chemical fascination",
-            "removePrice": 5500,
-            "stats": []
-        },
-        {
-            "addPrice": 3500,
-            "bypassLimit": false,
-            "canAdd": true,
-            "canRemove": true,
-            "conflicts": [],
-            "defName": "DrugDesire",
-            "degree": 1,
-            "description": "[PAWN_nameDef] has an unusual interest in chemical sources of enjoyment. Consuming recreational drugs will create a good mood, while abstaining will lead to increasing frustration over time and possible drug binges. [PAWN_pronoun] will ignore directives to not use recreational drugs, and will consume more than a normal person.",
-            "name": "chemical interest",
-            "removePrice": 5500,
-            "stats": []
-        },
-        {
-            "addPrice": 3500,
-            "bypassLimit": false,
-            "canAdd": true,
-            "canRemove": true,
-            "conflicts": [],
-            "defName": "DrugDesire",
-            "degree": -1,
-            "description": "[PAWN_nameDef] abhors the idea of gaining pleasure from chemicals. [PAWN_pronoun] strictly avoids alcohol and recreational drugs.",
-            "name": "teetotaler",
-            "removePrice": 5500,
-            "stats": []
-        },
-        {
-            "addPrice": 3500,
-            "bypassLimit": false,
-            "canAdd": true,
-            "canRemove": true,
-            "conflicts": [],
-            "defName": "FastLearner",
-            "degree": 0,
-            "description": "{PAWN_nameDef} has a knack for learning. {PAWN_pronoun} picks things up much faster than others.",
-            "name": "fast learner",
-            "removePrice": 5500,
-            "stats": [
-                "+75% Global learning factor"
-            ]
-        },
-        {
-            "addPrice": 3500,
-            "bypassLimit": true,
-            "canAdd": true,
-            "canRemove": true,
-            "conflicts": [],
-            "defName": "Gay",
-            "degree": 0,
-            "description": "{PAWN_nameDef} is romantically attracted to people of {PAWN_possessive} own gender.",
-            "name": "gay",
-            "removePrice": 5500,
-            "stats": []
-        },
-        {
-            "addPrice": 3500,
-            "bypassLimit": false,
-            "canAdd": true,
-            "canRemove": true,
-            "conflicts": [
-                "Ascetic"
-            ],
-            "defName": "Gourmand",
-            "degree": 0,
-            "description": "{PAWN_nameDef}'s life revolves around food. {PAWN_pronoun} gets hungry quickly, and will occasionally be overcome with the urge to eat ravenously, even when not hungry.",
-            "name": "gourmand",
-            "removePrice": 5500,
-            "stats": [
-                "+50% Hunger rate multiplier"
-            ]
-        },
-        {
-            "addPrice": 3500,
-            "bypassLimit": false,
-            "canAdd": true,
-            "canRemove": true,
-            "conflicts": [],
-            "defName": "GreatMemory",
-            "degree": 0,
-            "description": "{PAWN_nameDef} has a fantastic memory for detail. {PAWN_pronoun} will lose unused skills at half the rate of other people.",
-            "name": "great memory",
-            "removePrice": 5500,
-            "stats": []
-        },
-        {
-            "addPrice": 3500,
-            "bypassLimit": false,
-            "canAdd": true,
-            "canRemove": true,
-            "conflicts": [
-                "Ascetic",
-                "Jealous"
-            ],
-            "defName": "Greedy",
-            "degree": 0,
-            "description": "{PAWN_nameDef} needs a really impressive bedroom. {PAWN_pronoun} gets a mood loss if {PAWN_pronoun} doesn't get what {PAWN_pronoun} wants.",
-            "name": "greedy",
-            "removePrice": 5500,
-            "stats": []
-        },
-        {
-            "addPrice": 3500,
-            "bypassLimit": false,
-            "canAdd": true,
-            "canRemove": true,
-            "conflicts": [],
-            "defName": "Immunity",
-            "degree": -1,
-            "description": "[PAWN_nameDef] has an awful immune system. [PAWN_pronoun] gets sick more often than usual, frequently with illnesses that nobody in the colony has been afflicted by.",
-            "name": "sickly",
-            "removePrice": 5500,
-            "stats": []
-        },
-        {
-            "addPrice": 3500,
-            "bypassLimit": false,
-            "canAdd": true,
-            "canRemove": true,
-            "conflicts": [],
-            "defName": "Immunity",
-            "degree": 1,
-            "description": "[PAWN_nameDef] has a naturally powerful immune system. [PAWN_pronoun] will gain immunity much faster than a normal person would, and can survive illnesses that would kill others.",
-            "name": "super-immune",
-            "removePrice": 5500,
-            "stats": [
-                "+30% Immunity gain speed"
-            ]
-        },
-        {
-            "addPrice": 3500,
-            "bypassLimit": false,
-            "canAdd": true,
-            "canRemove": true,
-            "conflicts": [],
-            "defName": "Industriousness",
-            "degree": 1,
-            "description": "[PAWN_nameDef] is a natural hard worker and will finish tasks faster than most.",
-            "name": "hard worker",
-            "removePrice": 5500,
-            "stats": [
-                "+20% Global work speed"
-            ]
-        },
-        {
-            "addPrice": 3500,
-            "bypassLimit": false,
-            "canAdd": true,
-            "canRemove": true,
-            "conflicts": [],
-            "defName": "Industriousness",
-            "degree": 2,
-            "description": "[PAWN_nameDef] has an easy time staying on-task and focused, and gets things done much faster than the average person.",
-            "name": "industrious",
-            "removePrice": 5500,
-            "stats": [
-                "+35% Global work speed"
-            ]
-        },
-        {
-            "addPrice": 3500,
-            "bypassLimit": false,
-            "canAdd": true,
-            "canRemove": true,
-            "conflicts": [],
-            "defName": "Industriousness",
-            "degree": -2,
-            "description": "[PAWN_nameDef] loves idleness and hates anything productive. [PAWN_pronoun] moves slowly and rarely stays focused on a task.",
-            "name": "slothful",
-            "removePrice": 5500,
-            "stats": [
-                "-35% Global work speed"
-            ]
-        },
-        {
-            "addPrice": 3500,
-            "bypassLimit": false,
-            "canAdd": true,
-            "canRemove": true,
-            "conflicts": [],
-            "defName": "Industriousness",
-            "degree": -1,
-            "description": "[PAWN_nameDef] is a little bit lazy.",
-            "name": "lazy",
-            "removePrice": 5500,
-            "stats": [
-                "-20% Global work speed"
-            ]
-        },
-        {
-            "addPrice": 3500,
-            "bypassLimit": false,
-            "canAdd": true,
-            "canRemove": true,
-            "conflicts": [
-                "Ascetic",
-                "Greedy"
-            ],
-            "defName": "Jealous",
-            "degree": 0,
-            "description": "For {PAWN_nameDef}, it's degrading to have a less impressive bedroom than someone else. {PAWN_pronoun} gets a mood loss if any colonist has a more impressive bedroom.",
-            "name": "jealous",
-            "removePrice": 5500,
-            "stats": []
-        },
-        {
-            "addPrice": 3500,
-            "bypassLimit": false,
-            "canAdd": true,
-            "canRemove": true,
-            "conflicts": [
-                "Abrasive",
-                "Psychopath"
-            ],
-            "defName": "Kind",
-            "degree": 0,
-            "description": "{PAWN_nameDef} is exceptionally kind. {PAWN_pronoun} has a special way of using kind words to brighten someone's day. {PAWN_pronoun} never insults others, and never judges people by their appearance.",
-            "name": "kind",
-            "removePrice": 5500,
-            "stats": []
-        },
-        {
-            "addPrice": 3500,
-            "bypassLimit": false,
-            "canAdd": true,
-            "canRemove": true,
-            "conflicts": [],
-            "defName": "Masochist",
-            "degree": 0,
-            "description": "For {PAWN_nameDef}, there's something exciting about getting hurt. {PAWN_pronoun} doesn't know why, {PAWN_pronoun}'s just wired differently.",
-            "name": "masochist",
-            "removePrice": 5500,
-            "stats": []
-        },
-        {
-            "addPrice": 3500,
-            "bypassLimit": false,
-            "canAdd": true,
-            "canRemove": true,
-            "conflicts": [],
-            "defName": "NaturalMood",
-            "degree": -1,
-            "description": "[PAWN_nameDef] tends to look on the bad side of life.",
-            "name": "pessimist",
-            "removePrice": 5500,
-            "stats": []
-        },
-        {
-            "addPrice": 3500,
-            "bypassLimit": false,
-            "canAdd": true,
-            "canRemove": true,
-            "conflicts": [],
-            "defName": "NaturalMood",
-            "degree": -2,
-            "description": "[PAWN_nameDef] is perenially unhappy. [PAWN_pronoun] has trouble sustaining a good mood even when everything is fine.",
-            "name": "depressive",
-            "removePrice": 5500,
-            "stats": []
-        },
-        {
-            "addPrice": 3500,
-            "bypassLimit": false,
-            "canAdd": true,
-            "canRemove": true,
-            "conflicts": [],
-            "defName": "NaturalMood",
-            "degree": 2,
-            "description": "[PAWN_nameDef] is just naturally upbeat about [PAWN_possessive] situation, pretty much all the time, no matter what it is.",
-            "name": "sanguine",
-            "removePrice": 5500,
-            "stats": []
-        },
-        {
-            "addPrice": 3500,
-            "bypassLimit": false,
-            "canAdd": true,
-            "canRemove": true,
-            "conflicts": [],
-            "defName": "NaturalMood",
-            "degree": 1,
-            "description": "[PAWN_nameDef] is naturally optimistic about life. It's hard to get [PAWN_objective] down.",
-            "name": "optimist",
-            "removePrice": 5500,
-            "stats": []
-        },
-        {
-            "addPrice": 3500,
-            "bypassLimit": false,
-            "canAdd": true,
-            "canRemove": true,
-            "conflicts": [],
-            "defName": "Nerves",
-            "degree": 2,
-            "description": "[PAWN_nameDef]'s will is an iron shield. [PAWN_pronoun] keeps going through thick and thin, when others broke down long before.",
-            "name": "iron-willed",
-            "removePrice": 5500,
-            "stats": [
-                "-18% Mental break threshold"
-            ]
-        },
-        {
-            "addPrice": 3500,
-            "bypassLimit": false,
-            "canAdd": true,
-            "canRemove": true,
-            "conflicts": [],
-            "defName": "Nerves",
-            "degree": -2,
-            "description": "[PAWN_nameDef] is on a hair-trigger all the time. [PAWN_pronoun] is the first to break in any tough situation.",
-            "name": "volatile",
-            "removePrice": 5500,
-            "stats": [
-                "+15% Mental break threshold"
-            ]
-        },
-        {
-            "addPrice": 3500,
-            "bypassLimit": false,
-            "canAdd": true,
-            "canRemove": true,
-            "conflicts": [],
-            "defName": "Nerves",
-            "degree": -1,
-            "description": "[PAWN_nameDef] tends to crack under pressure.",
-            "name": "nervous",
-            "removePrice": 5500,
-            "stats": [
-                "+8% Mental break threshold"
-            ]
-        },
-        {
-            "addPrice": 3500,
-            "bypassLimit": false,
-            "canAdd": true,
-            "canRemove": true,
-            "conflicts": [],
-            "defName": "Nerves",
-            "degree": 1,
-            "description": "[PAWN_nameDef] is mentally tough and won't break down under stresses that would crack most people.",
-            "name": "steadfast",
-            "removePrice": 5500,
-            "stats": [
-                "-9% Mental break threshold"
-            ]
-        },
-        {
-            "addPrice": 3500,
-            "bypassLimit": false,
-            "canAdd": true,
-            "canRemove": true,
-            "conflicts": [],
-            "defName": "Neurotic",
-            "degree": 1,
-            "description": "[PAWN_nameDef] likes to have things squared away. [PAWN_pronoun] will work harder than most to attain this state of affairs, but [PAWN_possessive] nerves can get the better of [PAWN_objective].",
-            "name": "neurotic",
-            "removePrice": 5500,
-            "stats": [
-                "+20% Global work speed",
-                "+8% Mental break threshold"
-            ]
-        },
-        {
-            "addPrice": 3500,
-            "bypassLimit": false,
-            "canAdd": true,
-            "canRemove": true,
-            "conflicts": [],
-            "defName": "Neurotic",
-            "degree": 2,
-            "description": "[PAWN_nameDef] feels constantly nervous about everything that has to get done. [PAWN_pronoun] will work extremely hard to attain this state of affairs, but [PAWN_possessive] nerves can easily get the better of [PAWN_objective].",
-            "name": "very neurotic",
-            "removePrice": 5500,
-            "stats": [
-                "+40% Global work speed",
-                "+14% Mental break threshold"
-            ]
-        },
-        {
-            "addPrice": 3500,
-            "bypassLimit": false,
-            "canAdd": true,
-            "canRemove": true,
-            "conflicts": [],
-            "defName": "NightOwl",
-            "degree": 0,
-            "description": "{PAWN_nameDef} likes to be up during the night, and sleep during the day.\n\n{PAWN_pronoun} gets a mood bonus if awake at night (23h-6h) and mood loss if awake during the day (11h-18h).\n\n{PAWN_pronoun} doesn't get a mood penalty for being in the dark.",
-            "name": "night owl",
-            "removePrice": 5500,
-            "stats": []
-        },
-        {
-            "addPrice": 3500,
-            "bypassLimit": false,
-            "canAdd": true,
-            "canRemove": true,
-            "conflicts": [],
-            "defName": "Nimble",
-            "degree": 0,
-            "description": "{PAWN_nameDef} has remarkable kinesthetic intelligence. {PAWN_pronoun} seems to dance around danger with preternatural grace.",
-            "name": "nimble",
-            "removePrice": 5500,
-            "stats": [
-                "+15.0 Melee dodge chance",
-                "x10% Trap spring chance"
-            ]
-        },
-        {
-            "addPrice": 3500,
-            "bypassLimit": false,
-            "canAdd": true,
-            "canRemove": true,
-            "conflicts": [],
-            "defName": "Nudist",
-            "degree": 0,
-            "description": "{PAWN_nameDef} enjoys the feeling of freedom that comes from being nude. {PAWN_pronoun} can handle clothing, but will be happier without it.",
-            "name": "nudist",
-            "removePrice": 5500,
-            "stats": []
-        },
-        {
-            "addPrice": 3500,
-            "bypassLimit": false,
-            "canAdd": true,
-            "canRemove": true,
-            "conflicts": [],
-            "defName": "PsychicSensitivity",
-            "degree": 2,
-            "description": "[PAWN_nameDef]'s mind is like a psychic tuning fork. [PAWN_pronoun] is extremely sensitive to psychic phenomena.",
-            "name": "psychically hypersensitive",
-            "removePrice": 5500,
-            "stats": [
-                "+80% Psychic sensitivity"
-            ]
-        },
-        {
-            "addPrice": 3500,
-            "bypassLimit": false,
-            "canAdd": true,
-            "canRemove": true,
-            "conflicts": [],
-            "defName": "PsychicSensitivity",
-            "degree": -2,
-            "description": "[PAWN_nameDef]'s mind works on a psychic frequency different from everyone else. [PAWN_pronoun] just isn't affected by psychic phenomena.",
-            "name": "psychically deaf",
-            "removePrice": 5500,
-            "stats": [
-                "-100% Psychic sensitivity"
-            ]
-        },
-        {
-            "addPrice": 3500,
-            "bypassLimit": false,
-            "canAdd": true,
-            "canRemove": true,
-            "conflicts": [],
-            "defName": "PsychicSensitivity",
-            "degree": 1,
-            "description": "[PAWN_nameDef]'s mind is unusually sensitive to psychic phenomena.",
-            "name": "psychically sensitive",
-            "removePrice": 5500,
-            "stats": [
-                "+40% Psychic sensitivity"
-            ]
-        },
-        {
-            "addPrice": 3500,
-            "bypassLimit": false,
-            "canAdd": true,
-            "canRemove": true,
-            "conflicts": [],
-            "defName": "PsychicSensitivity",
-            "degree": -1,
-            "description": "[PAWN_nameDef]'s mind is psychically out of tune with others. [PAWN_pronoun] isn't as affected by psychic phenomena.",
-            "name": "psychically dull",
-            "removePrice": 5500,
-            "stats": [
-                "-50% Psychic sensitivity"
-            ]
-        },
-        {
-            "addPrice": 3500,
-            "bypassLimit": false,
-            "canAdd": true,
-            "canRemove": true,
-            "conflicts": [],
-            "defName": "Psychopath",
-            "degree": 0,
-            "description": "{PAWN_nameDef} has no empathy. The suffering of others doesn't bother {PAWN_objective} at all. {PAWN_pronoun} doesn't mind if others are butchered, left unburied, imprisoned, or sold to slavery - unless it affects {PAWN_objective}. {PAWN_pronoun} also feels no mood boost from socializing.",
-            "name": "psychopath",
-            "removePrice": 5500,
-            "stats": []
-        },
-        {
-            "addPrice": 3500,
-            "bypassLimit": false,
-            "canAdd": true,
-            "canRemove": true,
-            "conflicts": [],
-            "defName": "Pyromaniac",
-            "degree": 0,
-            "description": "{PAWN_nameDef} loves fire. {PAWN_pronoun} will never extinguish fires. To relieve stress, {PAWN_pronoun} will occasionally go on random fire starting sprees. This happens more often if {PAWN_possessive} mood is low.",
-            "name": "pyromaniac",
-            "removePrice": 5500,
-            "stats": []
-        },
-        {
-            "addPrice": 3500,
-            "bypassLimit": false,
-            "canAdd": true,
-            "canRemove": true,
-            "conflicts": [],
-            "defName": "QuickSleeper",
-            "degree": 0,
-            "description": "{PAWN_nameDef} doesn't need as much sleep as the average person. Whether {PAWN_pronoun}'s sleeping on a bed or on the ground, {PAWN_pronoun} will be fully rested in about two thirds the usual time.",
-            "name": "quick sleeper",
-            "removePrice": 5500,
-            "stats": [
-                "+50% Rest rate multiplier"
-            ]
-        },
-        {
-            "addPrice": 3500,
-            "bypassLimit": false,
-            "canAdd": true,
-            "canRemove": true,
-            "conflicts": [
-                "Brawler"
-            ],
-            "defName": "ShootingAccuracy",
-            "degree": 1,
-            "description": "[PAWN_nameDef] takes more time to aim when shooting. [PAWN_pronoun] shoots less often than others, but with more accuracy.",
-            "name": "careful shooter",
-            "removePrice": 5500,
-            "stats": [
-                "+25% Aiming time",
-                "+5.0 Shooting accuracy (people)"
-            ]
-        },
-        {
-            "addPrice": 3500,
-            "bypassLimit": false,
-            "canAdd": true,
-            "canRemove": true,
-            "conflicts": [
-                "Brawler"
-            ],
-            "defName": "ShootingAccuracy",
-            "degree": -1,
-            "description": "Pew! Pew! Pew! [PAWN_nameDef] just likes pulling the trigger. [PAWN_pronoun] shoots faster than others, but less accurately.",
-            "name": "trigger-happy",
-            "removePrice": 5500,
-            "stats": [
-                "-50% Aiming time",
-                "-5.0 Shooting accuracy (people)"
-            ]
-        },
-        {
-            "addPrice": 3500,
-            "bypassLimit": false,
-            "canAdd": true,
-            "canRemove": true,
-            "conflicts": [
-                "TooSmart"
-            ],
-            "defName": "SlowLearner",
-            "degree": 0,
-            "description": "{PAWN_nameDef} is slow on the uptake. {PAWN_pronoun} learns much slower than others.",
-            "name": "slow learner",
-            "removePrice": 5500,
-            "stats": [
-                "-75% Global learning factor"
-            ]
-        },
-        {
-            "addPrice": 3500,
-            "bypassLimit": false,
-            "canAdd": true,
-            "canRemove": true,
-            "conflicts": [],
-            "defName": "SpeedOffset",
-            "degree": 2,
-            "description": "[PAWN_nameDef] always moves with a sense of urgency - so much so that others often fail to keep up.",
-            "name": "jogger",
-            "removePrice": 5500,
-            "stats": [
-                "+0.40 Move speed"
-            ]
-        },
-        {
-            "addPrice": 3500,
-            "bypassLimit": false,
-            "canAdd": true,
-            "canRemove": true,
-            "conflicts": [],
-            "defName": "SpeedOffset",
-            "degree": 1,
-            "description": "[PAWN_nameDef] likes to be where [PAWN_pronoun]'s going. [PAWN_pronoun] walks quicker than most people.",
-            "name": "fast walker",
-            "removePrice": 5500,
-            "stats": [
-                "+0.20 Move speed"
-            ]
-        },
-        {
-            "addPrice": 3500,
-            "bypassLimit": false,
-            "canAdd": true,
-            "canRemove": true,
-            "conflicts": [],
-            "defName": "SpeedOffset",
-            "degree": -1,
-            "description": "[PAWN_nameDef] is always falling behind the group whenever [PAWN_pronoun] goes anywhere.",
-            "name": "slowpoke",
-            "removePrice": 5500,
-            "stats": [
-                "-0.20 Move speed"
-            ]
-        },
-        {
-            "addPrice": 3500,
-            "bypassLimit": false,
-            "canAdd": true,
-            "canRemove": true,
-            "conflicts": [
-                "Nerves",
-                "SlowLearner"
-            ],
-            "defName": "TooSmart",
-            "degree": 0,
-            "description": "{PAWN_nameDef} is too smart for {PAWN_possessive} own good. {PAWN_pronoun} learns everything much faster than everyone, but can be quite eccentric.",
-            "name": "too smart",
-            "removePrice": 5500,
-            "stats": [
-                "+75% Global learning factor",
-                "+12% Mental break threshold"
-            ]
-        },
-        {
-            "addPrice": 3500,
-            "bypassLimit": false,
-            "canAdd": true,
-            "canRemove": true,
-            "conflicts": [],
-            "defName": "TorturedArtist",
-            "degree": 0,
-            "description": "{PAWN_nameDef} feels alienated and misunderstood by other human beings. {PAWN_pronoun} will have a constant mood debuff, but gain a chance (50%) to get a creativity inspiration after a mental break.",
-            "name": "tortured artist",
-            "removePrice": 5500,
-            "stats": []
-        },
-        {
-            "addPrice": 3500,
-            "bypassLimit": false,
-            "canAdd": true,
-            "canRemove": true,
-            "conflicts": [],
-            "defName": "Tough",
-            "degree": 0,
-            "description": "{PAWN_nameDef} has thick skin, dense flesh, and durable bones. {PAWN_pronoun} takes much less damage than other people from the same blows. {PAWN_pronoun} is extremely hard to kill.",
-            "name": "tough",
-            "removePrice": 5500,
-            "stats": [
-                "x50% Incoming damage multiplier"
-            ]
-        },
-        {
-            "addPrice": 3500,
-            "bypassLimit": false,
-            "canAdd": true,
-            "canRemove": true,
-            "conflicts": [
-                "BodyPurist"
-            ],
-            "defName": "Transhumanist",
-            "degree": 0,
-            "description": "{PAWN_nameDef} feels limited in {PAWN_possessive} feeble human body. {PAWN_pronoun} often dreams of being enhanced by artificial body parts.",
-            "name": "transhumanist",
-            "removePrice": 5500,
-            "stats": []
-        },
-        {
-            "addPrice": 3500,
-            "bypassLimit": false,
-            "canAdd": true,
-            "canRemove": true,
-            "conflicts": [],
-            "defName": "Undergrounder",
-            "degree": 0,
-            "description": "{PAWN_nameDef} has no need to experience the outdoors or light. {PAWN_pronoun} will never feel cooped up or get cabin fever, no matter how long {PAWN_pronoun} stays inside, and is not bothered by darkness.",
-            "name": "undergrounder",
-            "removePrice": 5500,
-            "stats": []
-        },
-        {
-            "addPrice": 0,
-            "bypassLimit": false,
-            "canAdd": true,
-            "canRemove": true,
-            "conflicts": [
-                "Brawler"
-            ],
-            "defName": "Wimp",
-            "degree": 0,
-            "description": "{PAWN_nameDef} is weak and cowardly. Even a little pain will immobilize {PAWN_objective}.",
-            "name": "wimp",
-            "removePrice": 0,
-            "stats": [
-                "-60% Pain shock threshold"
-            ]
-        }
-    ],
-    "races": [
-        {
-            "defName": "Human",
-            "enabled": true,
-            "name": "Human",
-            "price": 1500
-        }
-    ]
+  "traits": [
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [
+        "kind",
+        "charismatic",
+        "verycharismatic",
+        "perceptive",
+        "veryperceptive",
+        "kind",
+        "uncouth",
+        "diplomat",
+        "masterdiplomat",
+        "sucker",
+        "haggler",
+        "mastertrader"
+      ],
+      "defName": "Abrasive",
+      "degree": 0,
+      "description": "{PAWN_nameDef} always says exactly what's on {PAWN_possessive} mind, especially if it's bugging {PAWN_objective}. That tends to rub people the wrong way. At least {PAWN_pronoun} doesn't mind being insulted or slighted either.",
+      "name": "abrasive",
+      "removePrice": 1200,
+      "stats": []
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [
+        "actiongirl",
+        "slowpoke",
+        "fastwalker",
+        "jogger",
+        "industrious",
+        "hardworker",
+        "lazy",
+        "slothful"
+      ],
+      "defName": "FT_ActionBoy",
+      "degree": 0,
+      "description": "There's no time to waste! [PAWN_nameDef] has increased movement and work speed.\n(Fallout Traits (Continued))",
+      "name": "actionboy",
+      "removePrice": 1200,
+      "stats": [
+        "+0.20 Move speed",
+        "+20% Global work speed",
+        "+20% Eating speed"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [
+        "actionboy",
+        "slowpoke",
+        "fastwalker",
+        "jogger",
+        "industrious",
+        "hardworker",
+        "lazy",
+        "slothful"
+      ],
+      "defName": "FT_ActionGirl",
+      "degree": 0,
+      "description": "There's no time to waste! [PAWN_nameDef] has increased movement and work speed.\n(Fallout Traits (Continued))",
+      "name": "actiongirl",
+      "removePrice": 1200,
+      "stats": [
+        "+0.20 Move speed",
+        "+20% Global work speed",
+        "+20% Eating speed"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [
+        "ascetic"
+      ],
+      "defName": "RCT_Aesthete",
+      "degree": 0,
+      "description": "[PAWN_nameDef] loves beautiful things, and really cares about how [PAWN_possessive] enviroment looks.\n((KV) Consolidated Traits - 1.1)",
+      "name": "aesthete",
+      "removePrice": 1200,
+      "stats": []
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [
+        "wimp",
+        "rooted"
+      ],
+      "defName": "FT_Agility",
+      "degree": 1,
+      "description": "[PAWN_nameDef] has good reflexes and moves with finesse. [PAWN_pronoun] will land and dodge more attacks in melee combat.\n(Fallout Traits (Continued))",
+      "name": "agile",
+      "removePrice": 1200,
+      "stats": [
+        "+15% Hunting stealth",
+        "+0.20 Move speed",
+        "+5.0 Melee hit chance",
+        "+5.0 Melee dodge chance"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [
+        "bloodlust",
+        "ghoulish"
+      ],
+      "defName": "FT_AnimalFriend",
+      "degree": 0,
+      "description": "[PAWN_nameDef] has a passion for animals. [PAWN_pronoun] gets bonuses to all animal interactions.\n(Fallout Traits (Continued))",
+      "name": "animalfriend",
+      "removePrice": 1200,
+      "stats": [
+        "+5% Hunting stealth",
+        "+10% Animal gather speed",
+        "+10% Animal gather yield",
+        "+5.00% Tame animal chance",
+        "+5.00% Train animal chance"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [
+        "silvertongue"
+      ],
+      "defName": "SYR_AnimalAffinity",
+      "degree": 0,
+      "description": "{PAWN_nameDef} has a special connection to animals and understands them better than most people. Animals also tend to understand what {PAWN_pronoun} wants from them. The time {PAWN_pronoun} spends with animals is long, but worth it.\n\n    Taming never causes manhunter\n    Easier taming of very wild animals\n((SYR) Individuality)",
+      "name": "animalfriend",
+      "removePrice": 1200,
+      "stats": [
+        "-50% Animal gather speed",
+        "+20% Animal gather yield"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [
+        "animallover"
+      ],
+      "defName": "RCT_AnimalHater",
+      "degree": 0,
+      "description": "[PAWN_nameDef] just isn't an \"animal person.\" [PAWN_pronoun] doesn't like animals, and for the record, they don't seem to much like [PAWN_objective], either.\n((KV) Consolidated Traits - 1.1)",
+      "name": "animalhater",
+      "removePrice": 1200,
+      "stats": [
+        "-10% Animal gather speed",
+        "-20% Animal gather yield",
+        "-40.00% Tame animal chance",
+        "-40.00% Train animal chance"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [
+        "animalhater",
+        "butcher"
+      ],
+      "defName": "RCT_AnimalLover",
+      "degree": 0,
+      "description": "[PAWN_nameDef] loves animals. [PAWN_pronoun] doesn't feel quite the same about people, though.\n((KV) Consolidated Traits - 1.1)",
+      "name": "animallover",
+      "removePrice": 1200,
+      "stats": [
+        "+10% Animal gather speed",
+        "+20% Animal gather yield",
+        "+40.00% Tame animal chance",
+        "+40.00% Train animal chance",
+        "-40.00% Social impact"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [
+        "charismatic",
+        "verycharismatic",
+        "uncouth",
+        "diplomat",
+        "masterdiplomat",
+        "sucker",
+        "haggler",
+        "mastertrader"
+      ],
+      "defName": "AnnoyingVoice",
+      "degree": 0,
+      "description": "{PAWN_nameDef}'s voice has a particularly grating, nasal quality to it, and {PAWN_pronoun} tends to talk in barked, garbled phrases. This predisposes others to dislike {PAWN_objective}.",
+      "name": "annoyingvoice",
+      "removePrice": 1200,
+      "stats": []
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [],
+      "defName": "SYR_Architect",
+      "degree": 0,
+      "description": "{PAWN_nameDef} is proficient with various construction materials, particularly stone. {PAWN_pronoun} will construct anything out of stone three times as fast as others and smooth out your rocky base in no time.\n\n    Stone construction speed +200%\n((SYR) Individuality)",
+      "name": "architect",
+      "removePrice": 1200,
+      "stats": [
+        "+200% Smoothing speed",
+        "+10% Construct success chance"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [],
+      "defName": "Artisan",
+      "degree": 0,
+      "description": "[PAWN_nameDef] is precisce and accurate with [PAWN_possessive] hands. [PAWN_pronoun] is skilled in art and crafting.\n(Synergistic Traits)",
+      "name": "artisan",
+      "removePrice": 1200,
+      "stats": [
+        "x130% General labor speed",
+        "x125% Construct success chance",
+        "x110% Mechanoid shredding speed"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [
+        "greedy",
+        "jealous",
+        "gourmand",
+        "aesthete"
+      ],
+      "defName": "Ascetic",
+      "degree": 0,
+      "description": "{PAWN_nameDef} has forsaken physical comforts and enjoyments in favor of a simple, pure lifestyle. {PAWN_pronoun} will become unhappy if if {PAWN_pronoun} has a bedroom that's too impressive. {PAWN_pronoun} also dislikes fancy food and prefers to eat raw. {PAWN_pronoun} never judges others by their appearance.",
+      "name": "ascetic",
+      "removePrice": 1200,
+      "stats": []
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": true,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [],
+      "defName": "Asexual",
+      "degree": 0,
+      "description": "{PAWN_nameDef} has no sexual attraction to anyone at all.",
+      "name": "asexual",
+      "removePrice": 1200,
+      "stats": []
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [],
+      "defName": "Beauty",
+      "degree": 2,
+      "description": "[PAWN_nameDef] is exceptionally beautiful, with an exotic-yet-familiar facial structure and an arresting gaze. People are attracted to [PAWN_objective] before [PAWN_pronoun] even opens [PAWN_possessive] mouth.",
+      "name": "beautiful",
+      "removePrice": 1200,
+      "stats": [
+        "+2.0 Beauty"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": true,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [],
+      "defName": "Bisexual",
+      "degree": 0,
+      "description": "{PAWN_nameDef} is romantically attracted to both men and women.",
+      "name": "bisexual",
+      "removePrice": 1200,
+      "stats": []
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [],
+      "defName": "SYR_Blacksmith",
+      "degree": 0,
+      "description": "(Old trait)\n((SYR) Individuality)",
+      "name": "blacksmith(old)",
+      "removePrice": 1200,
+      "stats": []
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [
+        "animalfriend",
+        "charismatic",
+        "verycharismatic"
+      ],
+      "defName": "Bloodlust",
+      "degree": 0,
+      "description": "{PAWN_nameDef} gets a rush from hurting people, and never minds the sight of blood or death. {PAWN_pronoun} is four times as likely to start a social fight as others.",
+      "name": "bloodlust",
+      "removePrice": 1200,
+      "stats": []
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [
+        "transhumanist"
+      ],
+      "defName": "BodyPurist",
+      "degree": 0,
+      "description": "{PAWN_nameDef} believes the human body is limited for a reason. To {PAWN_objective}, artificial body parts are unethical and disgusting.",
+      "name": "bodypurist",
+      "removePrice": 1200,
+      "stats": []
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [],
+      "defName": "Botanist",
+      "degree": 0,
+      "description": "[PAWN_nameDef] has a professional education in plant biology. [PAWN_possessive] knowledge comes in handy often.\n(Synergistic Traits)",
+      "name": "botanist",
+      "removePrice": 1200,
+      "stats": [
+        "x125% Plant work speed",
+        "x120% Plant harvest yield",
+        "x50% Food poison chance (chance to poison a meal)",
+        "x150% Foraged food amount",
+        "x110% Research speed"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [
+        "carefulshooter",
+        "trigger-happy",
+        "deadshot",
+        "expertshooter",
+        "wimp",
+        "carefulshooter",
+        "trigger-happy",
+        "deadshot",
+        "expertshooter",
+        "gunnut"
+      ],
+      "defName": "Brawler",
+      "degree": 0,
+      "description": "{PAWN_nameDef} likes to fight up close and personal. {PAWN_possessive} accuracy is greatly increased in melee combat, but {PAWN_pronoun}'ll be very unhappy if asked to carry a ranged weapon.",
+      "name": "brawler",
+      "removePrice": 1200,
+      "stats": [
+        "+4.0 Melee hit chance"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [
+        "greenthumb",
+        "inept",
+        "coordinated"
+      ],
+      "defName": "RCT_BrownThumb",
+      "degree": 0,
+      "description": "[PAWN_nameDef] is a terrible gardener. The only thing [PAWN_pronoun] seems able to grow is weeds.\n((KV) Consolidated Traits - 1.1)",
+      "name": "brownthumb",
+      "removePrice": 1200,
+      "stats": [
+        "-15% Plant harvest yield",
+        "-15% Plant work speed"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [
+        "inept",
+        "coordinated"
+      ],
+      "defName": "RCT_Builder",
+      "degree": 0,
+      "description": "[PAWN_nameDef] loved playing with construction toys as a child, and still enjoys the thrill of \"putting things together.\" But [PAWN_pronoun] tends to be a bit lost without clear instructions to follow.\n((KV) Consolidated Traits - 1.1)",
+      "name": "builder",
+      "removePrice": 1200,
+      "stats": [
+        "+20% Construction speed",
+        "+20% Construct success chance",
+        "-40.00% Tame animal chance"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [
+        "animallover",
+        "inept",
+        "coordinated"
+      ],
+      "defName": "RCT_Butcher",
+      "degree": 0,
+      "description": "[PAWN_nameDef] enjoys preparing meat for cooking. [PAWN_possessive] butchering speed is greatly increased, but only if [PAWN_pronoun]'s dealing with animal corpses. [PAWN_pronoun]'s terrible with mechanoids.\n((KV) Consolidated Traits - 1.1)",
+      "name": "butcher",
+      "removePrice": 1200,
+      "stats": [
+        "+20% Butchery efficiency",
+        "+40% Butchery speed",
+        "-20% Mechanoid shredding efficiency",
+        "-40% Mechanoid shredding speed"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [],
+      "defName": "Cannibal",
+      "degree": 0,
+      "description": "{PAWN_nameDef} was taught that eating human meat is wrong and horrible. But one time, long ago, {PAWN_pronoun} tried it... and {PAWN_pronoun} liked it.",
+      "name": "cannibal",
+      "removePrice": 1200,
+      "stats": []
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [
+        "brawler",
+        "cranialnervepalsy",
+        "eagle-eyed"
+      ],
+      "defName": "ShootingAccuracy",
+      "degree": 1,
+      "description": "[PAWN_nameDef] takes more time to aim when shooting. [PAWN_pronoun] shoots less often than others, but with more accuracy.\n((KV) Consolidated Traits - 1.1)",
+      "name": "carefulshooter",
+      "removePrice": 1200,
+      "stats": [
+        "+25% Aiming time",
+        "+3.0 Shooting accuracy (people)"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [
+        "abrasive",
+        "bloodlust",
+        "idiotsavant",
+        "annoyingvoice"
+      ],
+      "defName": "FT_Charisma",
+      "degree": 1,
+      "description": "[PAWN_nameDef] has a charismatic personality. [PAWN_pronoun] gets bonuses to all human-like social interactions.\n(Fallout Traits (Continued))",
+      "name": "charismatic",
+      "removePrice": 1200,
+      "stats": [
+        "+10.00% Negotiation ability",
+        "+20.00% Social impact",
+        "+5.00% Trade price improvement"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [
+        "psychopath",
+        "petty"
+      ],
+      "defName": "MT_Charismatic",
+      "degree": 0,
+      "description": "{PAWN_nameDef} has a shining personality. {PAWN_possessive} words can get through to others more than usual.\n(Moloy Traits)",
+      "name": "charismatic",
+      "removePrice": 1200,
+      "stats": [
+        "+50.00% Social impact",
+        "+20.00% Trade price improvement"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [],
+      "defName": "SYR_Chef",
+      "degree": 0,
+      "description": "(Old trait)\n((SYR) Individuality)",
+      "name": "chef(old)",
+      "removePrice": 1200,
+      "stats": []
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [],
+      "defName": "DrugDesire",
+      "degree": 2,
+      "description": "{PAWN_nameDef} has an intense fascination with chemical sources of enjoyment. {PAWN_pronoun} will consume much more of them and, if not already addicted to any drug and satisfied, will sometimes go on hard drug binges. {PAWN_pronoun} will ignore directives to not use pleasurable drugs. If there is one upside to this it's all the inspiration one can get from drugs.",
+      "name": "chemicalfascination",
+      "removePrice": 1200,
+      "stats": []
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [],
+      "defName": "DrugDesire",
+      "degree": 1,
+      "description": "{PAWN_nameDef} has an unusual interest in chemical sources of enjoyment. {PAWN_pronoun} will consume more of them and, if not already addicted to any drug and satisfied, will sometimes go on social drug binges. {PAWN_pronoun} will ignore directives to not use pleasurable drugs. If there is one upside to this it's all the inspiration one can get from drugs.",
+      "name": "chemicalinterest",
+      "removePrice": 1200,
+      "stats": []
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [
+        "inept",
+        "coordinated",
+        "rockhound"
+      ],
+      "defName": "RCT_Claustrophobic",
+      "degree": 0,
+      "description": "[PAWN_nameDef] is claustrophobic. [PAWN_pronoun] is terrified of tight spaces, and thus is not a very competent miner.\n((KV) Consolidated Traits - 1.1)",
+      "name": "claustrophobic",
+      "removePrice": 1200,
+      "stats": [
+        "-20% Mining speed",
+        "-20% Mining yield"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [
+        "heatlover"
+      ],
+      "defName": "RCT_ColdLover",
+      "degree": 0,
+      "description": "[PAWN_nameDef] loves colder temperatures. [PAWN_pronoun]'ll complain less than others when it's chilly, but will whine more when it's hot.\n((KV) Consolidated Traits - 1.1)",
+      "name": "coldlover",
+      "removePrice": 1200,
+      "stats": [
+        "-3.0C Maximum comfortable temperature",
+        "-5.0C Minimum comfortable temperature"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [],
+      "defName": "MT_Commander",
+      "degree": 0,
+      "description": "{PAWN_nameDef} is an effective leader in ranged combat. Colonists around {PAWN_nameDef} have better aim.\n(Moloy Traits)",
+      "name": "commander",
+      "removePrice": 1200,
+      "stats": []
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [],
+      "defName": "MT_Conductor",
+      "degree": 0,
+      "description": "{PAWN_nameDef} leads the movement of others well. Colonists around {PAWN_nameDef} move faster.\n(Moloy Traits)",
+      "name": "conductor",
+      "removePrice": 1200,
+      "stats": []
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [
+        "industrious",
+        "hardworker",
+        "lazy",
+        "slothful",
+        "builder",
+        "butcher",
+        "claustrophobic",
+        "gourmet",
+        "inventor",
+        "perfectionist",
+        "rockhound",
+        "savant"
+      ],
+      "defName": "RCT_Aptitude",
+      "degree": 1,
+      "description": "[PAWN_nameDef] is unusually coordinated, and good at most any sort of skilled labor.\n((KV) Consolidated Traits - 1.1)",
+      "name": "coordinated",
+      "removePrice": 1200,
+      "stats": [
+        "+20% Global work speed",
+        "+10% Animal gather speed",
+        "+10% Animal gather yield",
+        "+10% Butchery efficiency",
+        "+10% Butchery speed",
+        "+10% Mechanoid shredding efficiency",
+        "+10% Mechanoid shredding speed",
+        "+10% Construction speed",
+        "+10% Construct success chance",
+        "+0.1 Cooking speed",
+        "+10% Repair success chance",
+        "-10.00% Food poison chance (chance to poison a meal)",
+        "+10% Mining speed",
+        "+10% Mining yield",
+        "+10% Plant harvest yield",
+        "+10% Plant work speed",
+        "+10% General labor speed"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [],
+      "defName": "crackshot",
+      "degree": 0,
+      "description": "[PAWN_nameDef] has good hand-eye coordination. [PAWN_pronoun] is quick to put [PAWN_possessive] sights on the target.\n(Synergistic Traits)",
+      "name": "crackshot",
+      "removePrice": 1200,
+      "stats": [
+        "x66% Aiming time"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [
+        "carefulshooter",
+        "trigger-happy",
+        "deadshot",
+        "expertshooter"
+      ],
+      "defName": "RCT_Eyesight",
+      "degree": -1,
+      "description": "[PAWN_nameDef] has a hard time seeing things clearly unless [PAWN_pronoun].\n((KV) Consolidated Traits - 1.1)",
+      "name": "cranialnervepalsy",
+      "removePrice": 1200,
+      "stats": [
+        "-4.0 Shooting accuracy (people)",
+        "-4.0 Melee hit chance",
+        "-20% Global work speed"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [],
+      "defName": "SYR_CreativeThinker",
+      "degree": 0,
+      "description": "{PAWN_nameDef} has a unique approach to science. {PAWN_pronoun} always thinks outside the box and finds inspiration for intellectual problems in art.\n\n    Artistic increases research speed\n((SYR) Individuality)",
+      "name": "creativethinker",
+      "removePrice": 1200,
+      "stats": []
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [
+        "uncouth",
+        "diplomat",
+        "masterdiplomat",
+        "sucker",
+        "haggler",
+        "mastertrader"
+      ],
+      "defName": "CreepyBreathing",
+      "degree": 0,
+      "description": "{PAWN_nameDef} breathes heavily all the time, and sweats constantly. People find it creepy.",
+      "name": "creepybreathing",
+      "removePrice": 1200,
+      "stats": []
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [
+        "toosmart"
+      ],
+      "defName": "RCT_decentlearner",
+      "degree": 0,
+      "description": "[PAWN_nameDef] has always picked up skills pretty quickly.\n((KV) Consolidated Traits - 1.1)",
+      "name": "decentlearner",
+      "removePrice": 1200,
+      "stats": [
+        "+25% Global learning factor"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [],
+      "defName": "deepdriller",
+      "degree": 0,
+      "description": "[PAWN_nameDef] worked for a mining company that made special utilization of the deep drilling technology. [PAWN_pronoun] knows the nuances and quirks of deep drilling and uses them to [PAWN_possessive] advantage.\n(Synergistic Traits)",
+      "name": "deepdriller",
+      "removePrice": 1200,
+      "stats": [
+        "x140% Deep drilling speed",
+        "x125% Mining speed",
+        "x110% Mining yield"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [],
+      "defName": "RCT_DeepSleeper",
+      "degree": 0,
+      "description": "[PAWN_nameDef] can sleep through anything.\n((KV) Consolidated Traits - 1.1)",
+      "name": "deepsleeper",
+      "removePrice": 1200,
+      "stats": []
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [],
+      "defName": "NaturalMood",
+      "degree": -2,
+      "description": "{PAWN_nameDef} is perenially unhappy. {PAWN_pronoun} has trouble sustaining a good mood even when everything is fine. {PAWN_possessive} only way to deal with it is hiding in {PAWN_possessive} room or wandering around in sadness.",
+      "name": "depressive",
+      "removePrice": 1200,
+      "stats": []
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [
+        "abrasive",
+        "annoyingvoice",
+        "creepybreathing"
+      ],
+      "defName": "RCT_Diplomat",
+      "degree": 1,
+      "description": "[PAWN_nameDef] knows how to grease the wheels of diplomacy.\n((KV) Consolidated Traits - 1.1)",
+      "name": "diplomat",
+      "removePrice": 1200,
+      "stats": [
+        "+15.00% Negotiation ability",
+        "+20.00% Social impact"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [
+        "toosmart",
+        "fastlearner",
+        "inventor",
+        "savant"
+      ],
+      "defName": "RCT_Dunce",
+      "degree": 0,
+      "description": "[PAWN_nameDef] is a bit of a dunce, and learns at a slower rate than others.\n((KV) Consolidated Traits - 1.1)",
+      "name": "dunce",
+      "removePrice": 1200,
+      "stats": [
+        "-25% Global learning factor",
+        "-20% Research speed"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [
+        "carefulshooter",
+        "trigger-happy",
+        "deadshot",
+        "expertshooter"
+      ],
+      "defName": "RCT_Eyesight",
+      "degree": 1,
+      "description": "[PAWN_nameDef] has a keen eye, and can quickly spot targets.\n((KV) Consolidated Traits - 1.1)",
+      "name": "eagle-eyed",
+      "removePrice": 1200,
+      "stats": [
+        "+1.0 Melee hit chance",
+        "+5.0 Shooting accuracy (people)"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [
+        "charismatic"
+      ],
+      "defName": "MT_Eccentric",
+      "degree": 0,
+      "description": "{PAWN_nameDef} Acts abnormally, probably due to their oddly high intelligence. {PAWN_pronoun} often makes a larger impact socially... For better or worse. {PAWN_nameDef} is so out of the social loop, {PAWN_pronoun} doesn't realise when {PAWN_pronoun} is being insulted.\n(Moloy Traits)",
+      "name": "eccentric",
+      "removePrice": 1200,
+      "stats": [
+        "+50.00% Social impact"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [
+        "wimp",
+        "iron-willed",
+        "steadfast",
+        "nervous",
+        "volatile"
+      ],
+      "defName": "FT_Endurance",
+      "degree": 1,
+      "description": "[PAWN_nameDef] has good health and an enduring personality. [PAWN_pronoun] is better at handling stressful situations than others.\n(Fallout Traits (Continued))",
+      "name": "enduring",
+      "removePrice": 1200,
+      "stats": [
+        "+10% Pain shock threshold",
+        "-10% Mental break threshold",
+        "+10% Immunity gain speed",
+        "-15% Toxic sensitivity",
+        "-15% Psychic sensitivity"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [],
+      "defName": "fasthands",
+      "degree": 0,
+      "description": "[PAWN_nameDef] is quick with [PAWN_possessive] hands. [PAWN_pronoun] does tasks faster than others.\n(Synergistic Traits)",
+      "name": "fasthands",
+      "removePrice": 1200,
+      "stats": [
+        "x125% Global work speed"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [
+        "idiotsavant",
+        "stupid",
+        "oblivious",
+        "dunce",
+        "savant",
+        "toosmart"
+      ],
+      "defName": "FastLearner",
+      "degree": 0,
+      "description": "{PAWN_nameDef} has a knack for learning. {PAWN_pronoun} picks things up much faster than others.",
+      "name": "fastlearner",
+      "removePrice": 1200,
+      "stats": [
+        "+75% Global learning factor",
+        "-10% Global work speed"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [
+        "actionboy",
+        "actiongirl",
+        "rooted"
+      ],
+      "defName": "SpeedOffset",
+      "degree": 1,
+      "description": "[PAWN_nameDef] likes to be where [PAWN_pronoun]'s going. [PAWN_pronoun] walks quicker than most people.",
+      "name": "fastwalker",
+      "removePrice": 1200,
+      "stats": [
+        "+0.40 Move speed"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [],
+      "defName": "fieldmedic",
+      "degree": 0,
+      "description": "[PAWN_nameDef] was trained to save lives in combat. [PAWN_pronoun] sacrifices quality for quantity.\n(Synergistic Traits)",
+      "name": "fieldmedic",
+      "removePrice": 1200,
+      "stats": [
+        "x90% Medical tend quality",
+        "x150% Medical tend speed",
+        "x110% Medical surgery success chance",
+        "x110% Medical operation speed"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [],
+      "defName": "VCEF_Fisherman",
+      "degree": 0,
+      "description": "{PAWN_nameDef} enjoys the solitude and tranquility inherent to long fishing sessions. {PAWN_pronoun} will prefer fishing above other activities.\n(Vanilla Fishing Expanded)",
+      "name": "fisherman",
+      "removePrice": 1200,
+      "stats": []
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [],
+      "defName": "foreman",
+      "degree": 0,
+      "description": "[PAWN_nameDef] is experienced in construction projects. It was [PAWN_possessive] job to make sure everything went as planned and pick up where others left off.\n(Synergistic Traits)",
+      "name": "foreman",
+      "removePrice": 1200,
+      "stats": [
+        "x133% Construction speed",
+        "x140% Smoothing speed",
+        "x110% Construct success chance",
+        "x120% Repair success chance"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [],
+      "defName": "SYR_GoodFortune",
+      "degree": 0,
+      "description": "{PAWN_nameDef} seems to have rented all the good fortune on this Rimworld.\n((SYR) Individuality)",
+      "name": "fortunate",
+      "removePrice": 1200,
+      "stats": [
+        "+10% Mining yield",
+        "+20% Animal gather yield",
+        "+10% Plant harvest yield"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [
+        "oblivious"
+      ],
+      "defName": "FT_FortuneFinder",
+      "degree": 0,
+      "description": "[PAWN_nameDef] seems to discover hidden wealth where ever [PAWN_pronoun] goes.\n(Fallout Traits (Continued))",
+      "name": "fortunefinder",
+      "removePrice": 1200,
+      "stats": [
+        "+5 Foraged food amount",
+        "+10% Mining yield",
+        "+10% Animal gather yield",
+        "+10% Plant harvest yield",
+        "+10.00% Trade price improvement"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [
+        "strongback",
+        "verystrongback"
+      ],
+      "defName": "FT_FrailBack",
+      "degree": 0,
+      "description": "[PAWN_nameDef] has a frail back so [PAWN_pronoun] can't carry as much as the average person.\n(Fallout Traits (Continued))",
+      "name": "frailback",
+      "removePrice": 1200,
+      "stats": [
+        "-25 Carrying capacity"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": true,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [],
+      "defName": "Gay",
+      "degree": 0,
+      "description": "{PAWN_nameDef} is romantically attracted to people of {PAWN_possessive} own gender.",
+      "name": "gay",
+      "removePrice": 1200,
+      "stats": []
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [
+        "radresistant",
+        "animalfriend"
+      ],
+      "defName": "FT_Ghoulish",
+      "degree": 0,
+      "description": "[PAWN_nameDef] is still human, mostly. [PAWN_pronoun] is immune to the effects of toxic fallout but their ghoulish appearance makes interacting with others difficult.\n(Fallout Traits (Continued))",
+      "name": "ghoulish",
+      "removePrice": 1200,
+      "stats": [
+        "-100% Toxic sensitivity",
+        "+30% Immunity gain speed",
+        "-20.00% Social impact",
+        "-10.00% Tame animal chance",
+        "-10.00% Train animal chance"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [],
+      "defName": "RCT_EatingSpeed",
+      "degree": 1,
+      "description": "[PAWN_nameDef] devours [PAWN_possessive] meals much faster than others.\n((KV) Consolidated Traits - 1.1)",
+      "name": "glutton",
+      "removePrice": 1200,
+      "stats": [
+        "+25% Eating speed"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [
+        "ascetic"
+      ],
+      "defName": "Gourmand",
+      "degree": 0,
+      "description": "{PAWN_nameDef}'s life revolves around food. {PAWN_pronoun} gets hungry quickly but also eats faster, cooks faster and knows his ingredients, barely ever causing food poisoning.",
+      "name": "gourmand",
+      "removePrice": 1200,
+      "stats": [
+        "+100% Eating speed",
+        "+5.0 Cooking speed",
+        "-75.00% Food poison chance (chance to poison a meal)",
+        "+10% Butchery efficiency",
+        "+35% Hunger rate multiplier"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [
+        "inept",
+        "coordinated"
+      ],
+      "defName": "RCT_Gourmet",
+      "degree": 0,
+      "description": "[PAWN_nameDef] has a passion for food preparation. [PAWN_possessive] culinary creations are quite tasty, but [PAWN_pronoun] tends to take a while getting them \"just right.\"\n((KV) Consolidated Traits - 1.1)",
+      "name": "gourmet",
+      "removePrice": 1200,
+      "stats": [
+        "-0.2 Cooking speed",
+        "-40.00% Food poison chance (chance to poison a meal)"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [],
+      "defName": "GreatMemory",
+      "degree": 0,
+      "description": "{PAWN_nameDef} has a fantastic memory for detail. {PAWN_pronoun} will lose unused skills at half the rate of other people.",
+      "name": "greatmemory",
+      "removePrice": 1200,
+      "stats": []
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [
+        "ascetic",
+        "jealous"
+      ],
+      "defName": "Greedy",
+      "degree": 0,
+      "description": "{PAWN_nameDef} needs a really impressive bedroom. {PAWN_pronoun} gets a mood loss if {PAWN_pronoun} doesn't get what {PAWN_pronoun} wants.",
+      "name": "greedy",
+      "removePrice": 1200,
+      "stats": []
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [],
+      "defName": "SYR_GreenThumb",
+      "degree": 0,
+      "description": "{PAWN_nameDef} has a special talent to grow plants and nurture them even in hostile enviroments. {PAWN_pronoun} can grow any plant, even if other people would fail due to their lack of skills. {PAWN_pronoun} would like some plants in {PAWN_possessive} bedroom.\n\n    Can grow any plant regardless of skill\n((SYR) Individuality)",
+      "name": "greenthumb",
+      "removePrice": 1200,
+      "stats": [
+        "+80% Plant work speed",
+        "+10% Plant harvest yield"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [
+        "inept",
+        "coordinated",
+        "brownthumb",
+        "rockhound"
+      ],
+      "defName": "RCT_GreenThumb",
+      "degree": 0,
+      "description": "[PAWN_nameDef] is a great gardener. The only thing [PAWN_pronoun] is a greener world.\n((KV) Consolidated Traits - 1.1)",
+      "name": "greenthumb",
+      "removePrice": 1200,
+      "stats": [
+        "+15% Plant harvest yield",
+        "+15% Plant work speed"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [
+        "brawler",
+        "wimp"
+      ],
+      "defName": "FT_GunNut",
+      "degree": 0,
+      "description": "[PAWN_nameDef] is a gun nut, [PAWN_pronoun] loves guns. [PAWN_pronoun] gets a mood bonus while holding a ranged weapon.\n(Fallout Traits (Continued))",
+      "name": "gunnut",
+      "removePrice": 1200,
+      "stats": [
+        "-10% Aiming time",
+        "+5.0 Shooting accuracy (people)"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [
+        "brawler"
+      ],
+      "defName": "SYR_GunNut",
+      "degree": 0,
+      "description": "{PAWN_nameDef} is a gun nut, {PAWN_possessive} life revolves around guns, how they are crafted, maintained and used. Quite a handy skill in these circumstances. Just don't hand {PAWN_objective} a melee weapon.\n((SYR) Individuality)",
+      "name": "gunnut",
+      "removePrice": 1200,
+      "stats": [
+        "-10% Aiming time"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [
+        "abrasive",
+        "annoyingvoice",
+        "creepybreathing"
+      ],
+      "defName": "RCT_Trader",
+      "degree": 1,
+      "description": "[PAWN_nameDef] likes to haggle, and isn't bad at it. [PAWN_pronoun] tends to get better prices than most people.\n((KV) Consolidated Traits - 1.1)",
+      "name": "haggler",
+      "removePrice": 1200,
+      "stats": [
+        "+20.00% Trade price improvement"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [],
+      "defName": "SYR_HandEyeCoordination",
+      "degree": 0,
+      "description": "{PAWN_nameDef} is exceptionally coordinated with his hands.\n((SYR) Individuality)",
+      "name": "hand-eyecoordination",
+      "removePrice": 1200,
+      "stats": [
+        "+15% Global work speed",
+        "-10% Aiming time",
+        "+5.0 Melee hit chance"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [
+        "actionboy",
+        "actiongirl",
+        "inept",
+        "coordinated",
+        "perfectionist"
+      ],
+      "defName": "Industriousness",
+      "degree": 1,
+      "description": "[PAWN_nameDef] is a natural hard worker and will finish tasks faster than most.",
+      "name": "hardworker",
+      "removePrice": 1200,
+      "stats": [
+        "+20% Global work speed",
+        "+10% Joy need rate multiplier"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [
+        "coldlover"
+      ],
+      "defName": "RCT_HeatLover",
+      "degree": 0,
+      "description": "[PAWN_nameDef] loves the heat. [PAWN_pronoun]'ll complain less than others when it's hot, but will whine more when it's cold.\n((KV) Consolidated Traits - 1.1)",
+      "name": "heatlover",
+      "removePrice": 1200,
+      "stats": [
+        "+5.0C Maximum comfortable temperature",
+        "+3.0C Minimum comfortable temperature"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [],
+      "defName": "MT_Hermit",
+      "degree": 0,
+      "description": "{PAWN_nameDef} prefers being solitary. {PAWN_pronoun} is better at working with plants anyways.\n(Moloy Traits)",
+      "name": "hermit",
+      "removePrice": 1200,
+      "stats": [
+        "+15% Plant harvest yield",
+        "-50.00% Social impact"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [],
+      "defName": "SYR_Hotblooded",
+      "degree": 0,
+      "description": "(Old trait)\n((SYR) Individuality)",
+      "name": "hotblooded(old)",
+      "removePrice": 1200,
+      "stats": []
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [
+        "fastlearner",
+        "toosmart",
+        "charismatic",
+        "verycharismatic",
+        "intelligent",
+        "veryintelligent",
+        "perceptive",
+        "veryperceptive"
+      ],
+      "defName": "FT_IdiotSavant",
+      "degree": 0,
+      "description": "[PAWN_nameDef] isn't stupid! [PAWN_pronoun] is just... different. [PAWN_pronoun] learns twice as fast but works slower than normal, [PAWN_pronoun] is also incapable handling some tasks.\n(Fallout Traits (Continued))",
+      "name": "idiotsavant",
+      "removePrice": 1200,
+      "stats": [
+        "+100% Global learning factor",
+        "-25% Global work speed"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [
+        "actionboy",
+        "actiongirl",
+        "inept",
+        "coordinated",
+        "perfectionist"
+      ],
+      "defName": "Industriousness",
+      "degree": 2,
+      "description": "[PAWN_nameDef] has an easy time staying on-task and focused, and gets things done much faster than the average person.",
+      "name": "industrious",
+      "removePrice": 1200,
+      "stats": [
+        "+35% Global work speed",
+        "+15% Joy need rate multiplier"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [
+        "industrious",
+        "hardworker",
+        "lazy",
+        "slothful",
+        "builder",
+        "butcher",
+        "claustrophobic",
+        "gourmet",
+        "inventor",
+        "perfectionist",
+        "rockhound",
+        "savant"
+      ],
+      "defName": "RCT_Aptitude",
+      "degree": -1,
+      "description": "[PAWN_pronoun] means well, but [PAWN_nameDef] is uncoordinated, and just not very good at any sort of skilled labor.\n((KV) Consolidated Traits - 1.1)",
+      "name": "inept",
+      "removePrice": 1200,
+      "stats": [
+        "-25% Global work speed",
+        "-20% Animal gather speed",
+        "-20% Animal gather yield",
+        "-20% Butchery efficiency",
+        "-20% Butchery speed",
+        "-20% Mechanoid shredding efficiency",
+        "-20% Mechanoid shredding speed",
+        "-20% Construction speed",
+        "-20% Construct success chance",
+        "-0.2 Cooking speed",
+        "-20% Repair success chance",
+        "+20.00% Food poison chance (chance to poison a meal)",
+        "-20% Mining speed",
+        "-20% Mining yield",
+        "-20% Plant harvest yield",
+        "-20% Plant work speed",
+        "-20% General labor speed"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [
+        "idiotsavant",
+        "stupid",
+        "toosmart"
+      ],
+      "defName": "FT_Intelligence",
+      "degree": 1,
+      "description": "[PAWN_nameDef] is smarter than average. [PAWN_pronoun] learns faster and has a good understanding of the world around [PAWN_objective].\n(Fallout Traits (Continued))",
+      "name": "intelligent",
+      "removePrice": 1200,
+      "stats": [
+        "+10% Research speed",
+        "+15% Global learning factor",
+        "+5.00% Negotiation ability",
+        "+5.00% Trade price improvement"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [
+        "wimp"
+      ],
+      "defName": "FT_Intimidation",
+      "degree": 1,
+      "description": "[PAWN_nameDef] has an intimidating personality, this gives [PAWN_objective] an advantage in social interactions.\n(Fallout Traits (Continued))",
+      "name": "intimidating",
+      "removePrice": 1200,
+      "stats": [
+        "+10.00% Negotiation ability",
+        "+20.00% Social impact"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [
+        "inept",
+        "coordinated",
+        "dunce"
+      ],
+      "defName": "RCT_Inventor",
+      "degree": 0,
+      "description": "Strange new ideas just appear in [PAWN_nameDef]'s mind. Researching new technologies comes easily to [PAWN_objective], but [PAWN_pronoun] always seems distracted.\n((KV) Consolidated Traits - 1.1)",
+      "name": "inventor",
+      "removePrice": 1200,
+      "stats": [
+        "+40% Research speed",
+        "-20% Global work speed",
+        "-0.10 Move speed",
+        "+10% Psychic sensitivity",
+        "+10% Mental break threshold"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [
+        "tough",
+        "wimp"
+      ],
+      "defName": "RCT_PainThreshold",
+      "degree": 1,
+      "description": "[PAWN_nameDef] has a high tolerance for pain.\n((KV) Consolidated Traits - 1.1)",
+      "name": "ironman",
+      "removePrice": 1200,
+      "stats": [
+        "+15% Pain shock threshold",
+        "-15% Incoming damage multiplier"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [
+        "enduring",
+        "veryenduring",
+        "toosmart",
+        "toosmart"
+      ],
+      "defName": "Nerves",
+      "degree": 2,
+      "description": "[PAWN_nameDef]'s will is an iron shield. [PAWN_pronoun] keeps going through thick and thin, when others broke down long before.",
+      "name": "iron-willed",
+      "removePrice": 1200,
+      "stats": [
+        "-18% Mental break threshold"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [
+        "ascetic",
+        "greedy"
+      ],
+      "defName": "Jealous",
+      "degree": 0,
+      "description": "For {PAWN_nameDef}, it's degrading to have a less impressive bedroom than someone else. {PAWN_pronoun} gets a mood loss if any colonist has a more impressive bedroom. At least {PAWN_pronoun} isn't as affected by prisoners or colonists dying and {PAWN_pronoun} doesn't mind wearing a dead person's clothing.",
+      "name": "jealous",
+      "removePrice": 1200,
+      "stats": []
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [
+        "actionboy",
+        "actiongirl",
+        "rooted"
+      ],
+      "defName": "SpeedOffset",
+      "degree": 2,
+      "description": "[PAWN_nameDef] always moves with a sense of urgency - so much so that others often fail to keep up.",
+      "name": "jogger",
+      "removePrice": 1200,
+      "stats": [
+        "+0.70 Move speed",
+        "-10% Rest rate multiplier"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [],
+      "defName": "SYR_KeenEye",
+      "degree": 0,
+      "description": "{PAWN_nameDef} has a keen eye and can spot even tiny mineral deposits. {PAWN_pronoun} will occassionally find small clumps of resources when mining any sort of stone or ore. Chance increased for flatter terrain.\n((SYR) Individuality)",
+      "name": "keeneye",
+      "removePrice": 1200,
+      "stats": [
+        "+40% Mining speed"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [
+        "abrasive",
+        "psychopath"
+      ],
+      "defName": "Kind",
+      "degree": 0,
+      "description": "{PAWN_nameDef} is exceptionally kind. {PAWN_pronoun} has a special way of using kind words to brighten someone's day. {PAWN_pronoun} never insults others, and never judges people by their appearance.",
+      "name": "kind",
+      "removePrice": 1200,
+      "stats": []
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [
+        "actionboy",
+        "actiongirl",
+        "inept",
+        "coordinated",
+        "perfectionist"
+      ],
+      "defName": "Industriousness",
+      "degree": -1,
+      "description": "[PAWN_nameDef] is a little bit lazy.",
+      "name": "lazy",
+      "removePrice": 1200,
+      "stats": [
+        "-20% Global work speed",
+        "-33% Joy need rate multiplier"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [
+        "tough",
+        "wimp"
+      ],
+      "defName": "RCT_PainThreshold",
+      "degree": -1,
+      "description": "[PAWN_nameDef] will become immobilized by pain more quickly than most.\n((KV) Consolidated Traits - 1.1)",
+      "name": "lowpaintolerance",
+      "removePrice": 1200,
+      "stats": [
+        "-15% Pain shock threshold",
+        "+15% Incoming damage multiplier"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [],
+      "defName": "MT_Luminary",
+      "degree": 0,
+      "description": "For whatever reason, everyone seems to really care how {PAWN_nameDef} is feeling.\n(Moloy Traits)",
+      "name": "luminary",
+      "removePrice": 1200,
+      "stats": []
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [],
+      "defName": "accurateShooter",
+      "degree": 0,
+      "description": "At range, [PAWN_nameDef] has better perception than most. [PAWN_pronoun] is more accurate than others.\n(Synergistic Traits)",
+      "name": "marksman",
+      "removePrice": 1200,
+      "stats": [
+        "x133% Shooting accuracy (people)"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [],
+      "defName": "Masochist",
+      "degree": 0,
+      "description": "For {PAWN_nameDef}, there's something exciting about getting hurt. {PAWN_pronoun} doesn't know why, {PAWN_pronoun}'s just wired differently.",
+      "name": "masochist",
+      "removePrice": 1200,
+      "stats": []
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [
+        "abrasive",
+        "annoyingvoice",
+        "creepybreathing"
+      ],
+      "defName": "RCT_Diplomat",
+      "degree": 2,
+      "description": "[PAWN_nameDef] has such a way with words that [PAWN_pronoun] always manages to cool down a tense situation. [PAWN_pronoun] could talk for days and people would still listen.\n((KV) Consolidated Traits - 1.1)",
+      "name": "masterdiplomat",
+      "removePrice": 1200,
+      "stats": [
+        "+30.00% Negotiation ability",
+        "+40.00% Social impact"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [],
+      "defName": "RCT_Medic",
+      "degree": 2,
+      "description": "[PAWN_nameDef] has a natural aptitude for medical work. Between [PAWN_possessive] steady, skilled hands and [PAWN_possessive] inspiring bedside manner, patients in [PAWN_possessive] care will have little to fear.\n((KV) Consolidated Traits - 1.1)",
+      "name": "mastermedic",
+      "removePrice": 1200,
+      "stats": [
+        "-20% Medical operation speed",
+        "+40% Medical surgery success chance",
+        "-20% Medical tend speed",
+        "+40% Medical tend quality"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [
+        "abrasive",
+        "annoyingvoice",
+        "creepybreathing"
+      ],
+      "defName": "RCT_Trader",
+      "degree": 2,
+      "description": "[PAWN_nameDef] always gets the best deals.\n((KV) Consolidated Traits - 1.1)",
+      "name": "mastertrader",
+      "removePrice": 1200,
+      "stats": [
+        "+40.00% Trade price improvement"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [],
+      "defName": "SYR_MechanoidExpert",
+      "degree": 0,
+      "description": "{PAWN_nameDef} has had their fair share of encounters with mechanoids. {PAWN_pronoun} has become an expert in mechanoid construction and combat, making {PAWN_objective} uniquely suited to disassemble and fight them.\n\n    Damage versus mechanoids +50%\n((SYR) Individuality)",
+      "name": "mechanoidexpert",
+      "removePrice": 1200,
+      "stats": [
+        "+50% Mechanoid shredding efficiency"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [],
+      "defName": "SYR_MedicalTraining",
+      "degree": 0,
+      "description": "(Old trait)\n((SYR) Individuality)",
+      "name": "medicaltraining(old)",
+      "removePrice": 1200,
+      "stats": []
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [],
+      "defName": "DislikesMen",
+      "degree": 0,
+      "description": "{PAWN_nameDef} really dislikes and distrusts men.",
+      "name": "misandrist",
+      "removePrice": 1200,
+      "stats": []
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [],
+      "defName": "DislikesWomen",
+      "degree": 0,
+      "description": "{PAWN_nameDef} really dislikes and distrusts women.",
+      "name": "misogynist",
+      "removePrice": 1200,
+      "stats": []
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [],
+      "defName": "naturalgenius",
+      "degree": 0,
+      "description": "[PAWN_nameDef] has an unusual ability to learn.\n(Synergistic Traits)",
+      "name": "naturalgenius",
+      "removePrice": 1200,
+      "stats": [
+        "x150% Global learning factor",
+        "x120% Psychic sensitivity",
+        "x120% Neural heat limit",
+        "x120% Mental break threshold"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [],
+      "defName": "RCT_NeatFreak",
+      "degree": 0,
+      "description": "[PAWN_nameDef] is fastidious to a fault.\n((KV) Consolidated Traits - 1.1)",
+      "name": "neatfreak",
+      "removePrice": 1200,
+      "stats": [
+        "-20% Global work speed",
+        "-50.00% Food poison chance (chance to poison a meal)",
+        "+20% Immunity gain speed",
+        "+20% Medical surgery success chance",
+        "+20% Medical tend quality",
+        "-10% Medical operation speed",
+        "-10% Medical tend speed"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [
+        "enduring",
+        "veryenduring",
+        "toosmart",
+        "toosmart"
+      ],
+      "defName": "Nerves",
+      "degree": -1,
+      "description": "[PAWN_nameDef] tends to crack under pressure.",
+      "name": "nervous",
+      "removePrice": 1200,
+      "stats": [
+        "+8% Mental break threshold"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [],
+      "defName": "Neurotic",
+      "degree": 1,
+      "description": "{PAWN_nameDef} likes to have things squared away. {PAWN_pronoun} will work harder than most to attain this state of affairs, but {PAWN_possessive} random mood swings can get the better of {PAWN_objective}.",
+      "name": "neurotic",
+      "removePrice": 1200,
+      "stats": [
+        "+20% Global work speed"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [],
+      "defName": "RCT_EatingSpeed",
+      "degree": -1,
+      "description": "[PAWN_nameDef] picks at [PAWN_possessive] food, taking extra time to finish [PAWN_possessive] meals.\n((KV) Consolidated Traits - 1.1)",
+      "name": "nibbler",
+      "removePrice": 1200,
+      "stats": [
+        "-25% Eating speed"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [],
+      "defName": "NightOwl",
+      "degree": 0,
+      "description": "{PAWN_nameDef} likes to be up during the night, and sleep during the day.\n\n{PAWN_pronoun} gets a mood bonus if awake at night (23h-6h) and mood loss if awake during the day (11h-18h).\n\n{PAWN_pronoun} doesn't get a mood penalty for being in the dark.",
+      "name": "nightowl",
+      "removePrice": 1200,
+      "stats": []
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [],
+      "defName": "Nimble",
+      "degree": 0,
+      "description": "{PAWN_nameDef} has remarkable kinesthetic intelligence. {PAWN_pronoun} seems to dance around danger with preternatural grace.",
+      "name": "nimble",
+      "removePrice": 1200,
+      "stats": [
+        "+15.0 Melee dodge chance",
+        "x10% Trap spring chance"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [
+        "wimp",
+        "rooted"
+      ],
+      "defName": "FT_Agility",
+      "degree": 2,
+      "description": "[PAWN_nameDef] has great reflexes and moves like a ninja. [PAWN_pronoun] will land and dodge more attacks in melee combat.\n(Fallout Traits (Continued))",
+      "name": "ninja-like",
+      "removePrice": 1200,
+      "stats": [
+        "+30% Hunting stealth",
+        "+0.40 Move speed",
+        "+5.0 Melee hit chance",
+        "+10.0 Melee dodge chance"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [],
+      "defName": "Nudist",
+      "degree": 0,
+      "description": "{PAWN_nameDef} enjoys the feeling of freedom that comes from being nude. {PAWN_pronoun} can handle clothing, but will be happier without it.",
+      "name": "nudist",
+      "removePrice": 1200,
+      "stats": []
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [],
+      "defName": "RCT_Nyctophobe",
+      "degree": 1,
+      "description": "[PAWN_nameDef] doesn't fear the dark at all.\n((KV) Consolidated Traits - 1.1)",
+      "name": "nyctophile",
+      "removePrice": 1200,
+      "stats": []
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [],
+      "defName": "RCT_Nyctophobe",
+      "degree": -1,
+      "description": "[PAWN_nameDef] is really afraid of the dark.\n((KV) Consolidated Traits - 1.1)",
+      "name": "nyctophobe",
+      "removePrice": 1200,
+      "stats": []
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [
+        "intelligent",
+        "veryintelligent",
+        "fastlearner",
+        "toosmart",
+        "perceptive",
+        "veryperceptive",
+        "fortunefinder",
+        "scrounger"
+      ],
+      "defName": "FT_Oblivious",
+      "degree": 0,
+      "description": "[PAWN_nameDef] isn't very aware of [PAWN_possessive] surroundings, or anything at all really. [PAWN_pronoun]\n(Fallout Traits (Continued))",
+      "name": "oblivious",
+      "removePrice": 1200,
+      "stats": [
+        "-10.00% Social impact",
+        "-10.00% Negotiation ability",
+        "-5.00% Trade price improvement",
+        "-5.00% Train animal chance",
+        "-5.00% Tame animal chance"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [],
+      "defName": "NaturalMood",
+      "degree": 1,
+      "description": "[PAWN_nameDef] is naturally optimistic about life. It's hard to get [PAWN_objective] down.",
+      "name": "optimist",
+      "removePrice": 1200,
+      "stats": []
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [],
+      "defName": "peasant",
+      "degree": 0,
+      "description": "[PAWN_nameDef] looks poor and useless upon first glance and is often overlooked.\n(Synergistic Traits)",
+      "name": "peasant",
+      "removePrice": 1200,
+      "stats": [
+        "x80% Trade price improvement",
+        "x50% Royal favor value",
+        "x50% Beauty"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [],
+      "defName": "MT_Peppy",
+      "degree": 0,
+      "description": "{PAWN_nameDef} is full of energy. {PAWN_pronoun} will randomly gain the Frenzy Go Inspiration, even if {PAWN_pronoun} is not happy.\n(Moloy Traits)",
+      "name": "peppy",
+      "removePrice": 1200,
+      "stats": []
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [
+        "idiotsavant",
+        "stupid",
+        "abrasive",
+        "oblivious"
+      ],
+      "defName": "FT_Perception",
+      "degree": 1,
+      "description": "[PAWN_nameDef] has a good awareness of [PAWN_possessive] surroundings and has a good understanding of how [PAWN_possessive] actions affects others.\n(Fallout Traits (Continued))",
+      "name": "perceptive",
+      "removePrice": 1200,
+      "stats": [
+        "+10.00% Social impact",
+        "+10.00% Negotiation ability",
+        "+5.00% Trade price improvement",
+        "+5.00% Train animal chance",
+        "+5.00% Tame animal chance"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": false,
+      "canRemove": true,
+      "conflicts": [],
+      "defName": "SYR_Perfectionist",
+      "degree": 0,
+      "description": "{PAWN_nameDef} wants thing to be exactly right. This does take time, but the results speak for themselves.\n\n    Quality level +1 (50% chance)\n((SYR) Individuality)",
+      "name": "perfectionist",
+      "removePrice": 1200,
+      "stats": [
+        "-25% Global work speed"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [
+        "industrious",
+        "hardworker",
+        "lazy",
+        "slothful",
+        "inept",
+        "coordinated"
+      ],
+      "defName": "RCT_Perfectionist",
+      "degree": 0,
+      "description": "[PAWN_nameDef] refuses to accept less than [PAWN_possessive] best in any endeavor, no matter how long it takes. [PAWN_pronoun]'s less likely to fail when doing something, but [PAWN_pronoun] works slowly.\n((KV) Consolidated Traits - 1.1)",
+      "name": "perfectionist",
+      "removePrice": 1200,
+      "stats": [
+        "-20% Global work speed",
+        "-10% Animal gather speed",
+        "+20% Animal gather yield",
+        "+20% Butchery efficiency",
+        "-10% Butchery speed",
+        "+20% Mechanoid shredding efficiency",
+        "-10% Mechanoid shredding speed",
+        "-10% Construction speed",
+        "+20% Construct success chance",
+        "-0.1 Cooking speed",
+        "+20% Repair success chance",
+        "-20.00% Food poison chance (chance to poison a meal)",
+        "-10% Medical operation speed",
+        "+20% Medical surgery success chance",
+        "+20% Medical tend quality",
+        "-10% Medical tend speed",
+        "-10% Mining speed",
+        "+20% Mining yield",
+        "+20% Plant harvest yield",
+        "-10% Plant work speed",
+        "-10% Research speed",
+        "-10% General labor speed"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [],
+      "defName": "NaturalMood",
+      "degree": -1,
+      "description": "[PAWN_nameDef] tends to look on the bad side of life.",
+      "name": "pessimist",
+      "removePrice": 1200,
+      "stats": []
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [
+        "psychopath",
+        "asexual"
+      ],
+      "defName": "MT_Petty",
+      "degree": 0,
+      "description": "{PAWN_nameDef} is overtly concerned with social hitches. {PAWN_pronoun} tends to annoy others and can't stand {PAWN_possessive} ex-lovers moving on.\n(Moloy Traits)",
+      "name": "petty",
+      "removePrice": 1200,
+      "stats": []
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [],
+      "defName": "pharmacist",
+      "degree": 0,
+      "description": "[PAWN_nameDef] has a professional education in pharmaceutical engineering. On the rim, this translates to proficiency in drug synthesizing.\n(Synergistic Traits)",
+      "name": "pharmacist",
+      "removePrice": 1200,
+      "stats": [
+        "x150% Drug cooking speed",
+        "x150% Drug synthesis speed",
+        "x110% Research speed"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [],
+      "defName": "FT_AimOffset",
+      "degree": -1,
+      "description": "[PAWN_nameDef] has poor hand-eye coordination and will miss [PAWN_possessive] target more often in combat.\n(Fallout Traits (Continued))",
+      "name": "pooraim",
+      "removePrice": 1200,
+      "stats": [
+        "-5.0 Shooting accuracy (people)",
+        "-5.0 Melee hit chance"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [],
+      "defName": "RCT_Medic",
+      "degree": -1,
+      "description": "Even when they have the best of intentions, some people just aren't cut out for medicine. [PAWN_nameDef] is one of those people.\n((KV) Consolidated Traits - 1.1)",
+      "name": "poormedic",
+      "removePrice": 1200,
+      "stats": [
+        "-20% Medical surgery success chance",
+        "-20% Medical tend quality"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [],
+      "defName": "Beauty",
+      "degree": 1,
+      "description": "[PAWN_nameDef] has a pretty face, which predisposes people to like [PAWN_objective].",
+      "name": "pretty",
+      "removePrice": 1200,
+      "stats": [
+        "+1.0 Beauty"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [],
+      "defName": "PsychicSensitivity",
+      "degree": -2,
+      "description": "[PAWN_nameDef]'s mind works on a psychic frequency different from everyone else. [PAWN_pronoun] just isn't affected by psychic phenomena.",
+      "name": "psychicallydeaf",
+      "removePrice": 1200,
+      "stats": [
+        "-100% Psychic sensitivity"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [],
+      "defName": "PsychicSensitivity",
+      "degree": -1,
+      "description": "[PAWN_nameDef]'s mind is psychically out of tune with others. [PAWN_pronoun] isn't as affected by psychic phenomena.",
+      "name": "psychicallydull",
+      "removePrice": 1200,
+      "stats": [
+        "-50% Psychic sensitivity"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [],
+      "defName": "PsychicSensitivity",
+      "degree": 2,
+      "description": "[PAWN_nameDef]'s mind is like a psychic tuning fork. [PAWN_pronoun] is extremely sensitive to psychic phenomena.",
+      "name": "psychicallyhypersensitive",
+      "removePrice": 1200,
+      "stats": [
+        "+80% Psychic sensitivity"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [],
+      "defName": "PsychicSensitivity",
+      "degree": 1,
+      "description": "[PAWN_nameDef]'s mind is unusually sensitive to psychic phenomena.",
+      "name": "psychicallysensitive",
+      "removePrice": 1200,
+      "stats": [
+        "+40% Psychic sensitivity"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [],
+      "defName": "Psychopath",
+      "degree": 0,
+      "description": "{PAWN_nameDef} has no empathy. The suffering of others doesn't bother {PAWN_objective} at all. {PAWN_pronoun} doesn't mind if others are butchered, left unburied, imprisoned, or sold to slavery - unless it affects {PAWN_objective}. {PAWN_pronoun} also feels no mood boost from socializing.",
+      "name": "psychopath",
+      "removePrice": 1200,
+      "stats": []
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [],
+      "defName": "Pyromaniac",
+      "degree": 0,
+      "description": "{PAWN_nameDef} loves fire. {PAWN_pronoun} will never extinguish fires. To relieve stress, {PAWN_pronoun} will occasionally go on random fire starting sprees. This happens more often if {PAWN_possessive} mood is low. Somehow this fascination with fire leads to a lot more inspiration.",
+      "name": "pyromaniac",
+      "removePrice": 1200,
+      "stats": []
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [],
+      "defName": "FT_QuickHands",
+      "degree": 0,
+      "description": "[PAWN_nameDef] has quick hands. When it comes to [PAWN_possessive] hands, [PAWN_nameDef] never hesitates.\n(Fallout Traits (Continued))",
+      "name": "quickhands",
+      "removePrice": 1200,
+      "stats": [
+        "-15% Aiming time",
+        "+15% Global work speed",
+        "+5.0 Melee hit chance"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [
+        "wimp"
+      ],
+      "defName": "SupremeMelee_QuickReflexes",
+      "degree": 1,
+      "description": "{PAWN_nameDef} reflexes are truly out of this world. They can parry melee attacks without any training and with luck even bullets.\n(Supreme Melee)",
+      "name": "quickreflexes",
+      "removePrice": 1200,
+      "stats": [
+        "+10.0 Melee parry melee chance",
+        "+5.0 Melee parry projectile chance",
+        "+10.0 Melee dodge chance"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [],
+      "defName": "QuickSleeper",
+      "degree": 0,
+      "description": "{PAWN_nameDef} doesn't need as much sleep as the average person. Whether {PAWN_pronoun}'s sleeping on a bed or on the ground, {PAWN_pronoun} will be fully rested in about two thirds the usual time.",
+      "name": "quicksleeper",
+      "removePrice": 1200,
+      "stats": [
+        "+50% Rest rate multiplier"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [
+        "ghoulish"
+      ],
+      "defName": "FT_RadResistant",
+      "degree": 0,
+      "description": "[PAWN_nameDef]'s body has built up a resistance to the negative effects of toxic fallout.\n(Fallout Traits (Continued))",
+      "name": "radresistant",
+      "removePrice": 1200,
+      "stats": [
+        "-50% Toxic sensitivity",
+        "+15% Immunity gain speed"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [],
+      "defName": "Rancher",
+      "degree": 0,
+      "description": "[PAWN_nameDef] knows how to deal with animals. [PAWN_pronoun] has managed many, many species of animals, everything from chickens to giant spiders.\n(Synergistic Traits)",
+      "name": "rancher",
+      "removePrice": 1200,
+      "stats": [
+        "x140% Animal gather speed",
+        "x120% Animal gather yield",
+        "x105% Plant work speed",
+        "x110% Foraged food amount",
+        "x115% Melee dodge chance",
+        "x135% Train animal chance",
+        "x125% Tame animal chance",
+        "x125% Hunting stealth"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [],
+      "defName": "AIRobot_BaseTrait",
+      "degree": 1,
+      "description": "NAME is an robot. As a robot HE is a bit faster and not really sensible for psychic phenomena.\n(Misc. Robots)",
+      "name": "robot",
+      "removePrice": 1200,
+      "stats": [
+        "+0.10 Move speed",
+        "+20% Global work speed",
+        "-100% Psychic sensitivity",
+        "-95% Toxic sensitivity",
+        "-90% Mental break threshold"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [
+        "inept",
+        "coordinated",
+        "claustrophobic"
+      ],
+      "defName": "RCT_Rockhound",
+      "degree": 0,
+      "description": "[PAWN_nameDef] enjoys working with rocks. [PAWN_possessive] mining speed is increased, but [PAWN_possessive] lack of interest in other areas slows [PAWN_objective] down when doing other jobs. And [PAWN_pronoun] hates working with plants.\n((KV) Consolidated Traits - 1.1)",
+      "name": "rockhound",
+      "removePrice": 1200,
+      "stats": [
+        "-20% Global work speed",
+        "+40% Mining speed",
+        "+20% Mining yield",
+        "-50% Plant harvest yield",
+        "-40% Plant work speed",
+        "+40% Smoothing speed"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [
+        "slowpoke",
+        "fastwalker",
+        "jogger",
+        "actionboy",
+        "actiongirl",
+        "wimp"
+      ],
+      "defName": "FT_Rooted",
+      "degree": 0,
+      "description": "[PAWN_nameDef] is part tree! [PAWN_pronoun] can really take a beating!\n(Fallout Traits (Continued))",
+      "name": "rooted",
+      "removePrice": 1200,
+      "stats": [
+        "-0.20 Move speed",
+        "+20% Pain shock threshold",
+        "+10% Immunity gain speed"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [],
+      "defName": "NaturalMood",
+      "degree": 2,
+      "description": "[PAWN_nameDef] is just naturally upbeat about [PAWN_possessive] situation, pretty much all the time, no matter what it is.",
+      "name": "sanguine",
+      "removePrice": 1200,
+      "stats": []
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [
+        "toosmart",
+        "fastlearner",
+        "inept",
+        "coordinated",
+        "dunce"
+      ],
+      "defName": "RCT_Savant",
+      "degree": 0,
+      "description": "[PAWN_nameDef] is a modern-day Da Vinci, with a creative mind that can grasp new ideas almost effortlessly. But [PAWN_pronoun]'s almost painfully slow when it comes to doing actual physical work.\n((KV) Consolidated Traits - 1.1)",
+      "name": "savant",
+      "removePrice": 1200,
+      "stats": [
+        "+80% Global learning factor",
+        "-60% Global work speed"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [],
+      "defName": "SYR_Scientist",
+      "degree": 0,
+      "description": "(Old trait)\n((SYR) Individuality)",
+      "name": "scientist(old)",
+      "removePrice": 1200,
+      "stats": []
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [],
+      "defName": "FT_Scrapper",
+      "degree": 0,
+      "description": "[PAWN_nameDef] is good at working with scrap metal. [PAWN_pronoun] is great with a smelter and is efficient when using building materials. \n(Fallout Traits (Continued))",
+      "name": "scrapper",
+      "removePrice": 1200,
+      "stats": [
+        "+20% Smelting speed",
+        "+10% Repair success chance",
+        "+10% Construct success chance",
+        "+10% Construction speed"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [
+        "oblivious"
+      ],
+      "defName": "FT_Scrounger",
+      "degree": 0,
+      "description": "[PAWN_nameDef] knows how to scavenge and gather for resources quickly.\n(Fallout Traits (Continued))",
+      "name": "scrounger",
+      "removePrice": 1200,
+      "stats": [
+        "+20% Mining speed",
+        "+20% Animal gather speed",
+        "+20% Plant work speed",
+        "+20% Eating speed"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [],
+      "defName": "Immunity",
+      "degree": -1,
+      "description": "[PAWN_nameDef] has an awful immune system. [PAWN_pronoun] gets sick more often than usual, frequently with illnesses that nobody in the colony has been afflicted by.",
+      "name": "sickly",
+      "removePrice": 1200,
+      "stats": []
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [],
+      "defName": "SYR_Haggler",
+      "degree": 0,
+      "description": "{PAWN_nameDef} knows exactly the right words for every situation. This also means {PAWN_possessive} insults hurt more.\n((SYR) Individuality)",
+      "name": "silvertongue",
+      "removePrice": 1200,
+      "stats": [
+        "+33.00% Trade price improvement",
+        "+20.00% Negotiation ability",
+        "+50.00% Social impact"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [],
+      "defName": "RCT_Medic",
+      "degree": 1,
+      "description": "[PAWN_nameDef] seems to have a knack for medical work. Patients in [PAWN_possessive] care will likely fare well.\n((KV) Consolidated Traits - 1.1)",
+      "name": "skilledmedic",
+      "removePrice": 1200,
+      "stats": [
+        "+20% Medical surgery success chance",
+        "+20% Medical tend quality"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [
+        "actionboy",
+        "actiongirl",
+        "inept",
+        "coordinated",
+        "perfectionist"
+      ],
+      "defName": "Industriousness",
+      "degree": -2,
+      "description": "[PAWN_nameDef] loves idleness and hates anything productive. [PAWN_pronoun] moves slowly and rarely stays focused on a task.",
+      "name": "slothful",
+      "removePrice": 1200,
+      "stats": [
+        "-35% Global work speed",
+        "-67% Joy need rate multiplier"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [
+        "toosmart"
+      ],
+      "defName": "SlowLearner",
+      "degree": 0,
+      "description": "{PAWN_nameDef} has never learned how to learn. The motivation and talent is there, {PAWN_pronoun} just needs time and patience. \n\n    Each skill point increases global learning factor by 2%",
+      "name": "slowlearner",
+      "removePrice": 1200,
+      "stats": [
+        "-130% Global learning factor"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [
+        "actionboy",
+        "actiongirl",
+        "rooted"
+      ],
+      "defName": "SpeedOffset",
+      "degree": -1,
+      "description": "[PAWN_nameDef] is always falling behind the group whenever [PAWN_pronoun] goes anywhere.",
+      "name": "slowpoke",
+      "removePrice": 1200,
+      "stats": [
+        "-0.40 Move speed",
+        "+25% Rest rate multiplier"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [],
+      "defName": "smith",
+      "degree": 0,
+      "description": "[PAWN_nameDef] is good at manipulating in crafting. The rougher work of crafting comes easy.\n(Synergistic Traits)",
+      "name": "smith",
+      "removePrice": 1200,
+      "stats": [
+        "x115% General labor speed",
+        "x135% Mechanoid shredding speed",
+        "x125% Mechanoid shredding efficiency",
+        "x150% Smelting speed"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [],
+      "defName": "socialworker",
+      "degree": 0,
+      "description": "[PAWN_nameDef] has a talent for social manipulation, [PAWN_pronoun] uses it to [PAWN_possessive] advantage.\n(Synergistic Traits)",
+      "name": "socialworker",
+      "removePrice": 1200,
+      "stats": [
+        "x115% Trade price improvement",
+        "x140% Negotiation ability",
+        "x140% Social impact"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [],
+      "defName": "Souschef",
+      "degree": 0,
+      "description": "[PAWN_nameDef] was in management at a high-end restuarant specializing in exotic dishes. [PAWN_pronoun] has an eye for bad ingredients.\n(Synergistic Traits)",
+      "name": "sous-chef",
+      "removePrice": 1200,
+      "stats": [
+        "x125% Cooking speed",
+        "x50% Food poison chance (chance to poison a meal)",
+        "x125% Butchery speed",
+        "x125% Butchery efficiency"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [],
+      "defName": "Beauty",
+      "degree": -2,
+      "description": "{PAWN_nameDef} is staggeringly ugly. {PAWN_possessive} face looks like a cross between a drawing by an untalented child, a malformed fetus in a jar of formaldehyde, and a piece of modern art. Others must exert conscious effort to look at {PAWN_objective} while conversing. If there is an upside to this than that no one minds if {PAWN_possessive} face has a scar or two... or ten.",
+      "name": "staggeringlyugly",
+      "removePrice": 1200,
+      "stats": [
+        "-2.0 Beauty"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [
+        "enduring",
+        "veryenduring",
+        "toosmart",
+        "toosmart"
+      ],
+      "defName": "Nerves",
+      "degree": 1,
+      "description": "[PAWN_nameDef] is mentally tough and won't break down under stresses that would crack most people.",
+      "name": "steadfast",
+      "removePrice": 1200,
+      "stats": [
+        "-9% Mental break threshold"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [],
+      "defName": "FT_AimOffset",
+      "degree": 1,
+      "description": "[PAWN_nameDef] has great hand-eye coordination and will miss [PAWN_possessive] target less often in combat.\n(Fallout Traits (Continued))",
+      "name": "steadyaim",
+      "removePrice": 1200,
+      "stats": [
+        "+5.0 Shooting accuracy (people)",
+        "+5.0 Melee hit chance"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [],
+      "defName": "SYR_SteadyHands",
+      "degree": 0,
+      "description": "{PAWN_nameDef} has particularly steady hands, which don't even tremble in dire circumstances or when {PAWN_pronoun} {PAWN_objective}self is injured.\n\n    No self-tend penalty\n((SYR) Individuality)",
+      "name": "steadyhands",
+      "removePrice": 1200,
+      "stats": [
+        "+50% Medical tend speed",
+        "+10% Medical tend quality",
+        "+3.0 Shooting accuracy (people)"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [
+        "slowpoke",
+        "fastwalker",
+        "jogger"
+      ],
+      "defName": "SYR_Agile",
+      "degree": 0,
+      "description": "{PAWN_nameDef} is uncommonly agile and stealthy, with better reflexes and a more flexible body than most.\n((SYR) Individuality)",
+      "name": "stealthy",
+      "removePrice": 1200,
+      "stats": [
+        "+100% Hunting stealth",
+        "+0.30 Move speed",
+        "+10.0 Melee dodge chance"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [
+        "wimp"
+      ],
+      "defName": "SYR_StrongBack",
+      "degree": 0,
+      "description": "{PAWN_nameDef} has a very strong back or is part mule or something. {PAWN_pronoun} can carry significantly more as a normal person.\n((SYR) Individuality)",
+      "name": "strongback",
+      "removePrice": 1200,
+      "stats": [
+        "+75 Carrying capacity"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [
+        "frailback"
+      ],
+      "defName": "FT_StrongBack",
+      "degree": 1,
+      "description": "[PAWN_nameDef] has a strong back which allows [PAWN_objective] to carry more than most people.\n(Fallout Traits (Continued))",
+      "name": "strongback",
+      "removePrice": 1200,
+      "stats": [
+        "+50 Carrying capacity"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [],
+      "defName": "RCT_Constitution",
+      "degree": 1,
+      "description": "[PAWN_nameDef]'s body is stronger than normal against diseases, pathogens and toxic fallout.\n((KV) Consolidated Traits - 1.1)",
+      "name": "strongconstitution",
+      "removePrice": 1200,
+      "stats": [
+        "+25% Immunity gain speed",
+        "-50% Toxic sensitivity"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [
+        "intelligent",
+        "veryintelligent",
+        "fastlearner",
+        "toosmart",
+        "perceptive",
+        "veryperceptive"
+      ],
+      "defName": "FT_Stupid",
+      "degree": 0,
+      "description": "[PAWN_nameDef] isn't very smart. [PAWN_pronoun] can mess up doing just about anything.\n(Fallout Traits (Continued))",
+      "name": "stupid",
+      "removePrice": 1200,
+      "stats": [
+        "-10% Research speed",
+        "-25% Global learning factor",
+        "-10.00% Negotiation ability",
+        "-5.00% Trade price improvement",
+        "-5% Construct success chance",
+        "-5% Repair success chance"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [
+        "abrasive",
+        "annoyingvoice",
+        "creepybreathing"
+      ],
+      "defName": "RCT_Trader",
+      "degree": -1,
+      "description": "[PAWN_nameDef] just can't seem to help but get taken advantage of while trading. [PAWN_pronoun]'ll pay more than [PAWN_pronoun] should, and still think that [PAWN_pronoun] got a good deal. \n((KV) Consolidated Traits - 1.1)",
+      "name": "sucker",
+      "removePrice": 1200,
+      "stats": [
+        "-20.00% Trade price improvement"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [],
+      "defName": "Immunity",
+      "degree": 1,
+      "description": "[PAWN_nameDef] has a naturally powerful immune system. [PAWN_pronoun] will gain immunity much faster than a normal person would, and can survive illnesses that would kill others.",
+      "name": "super-immune",
+      "removePrice": 1200,
+      "stats": [
+        "+30% Immunity gain speed"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [],
+      "defName": "swordsman",
+      "degree": 0,
+      "description": "[PAWN_nameDef] has had professional training in melee combat. [PAWN_pronoun] is more likely to land [PAWN_possessive] strikes and dodge opponent's.\n(Synergistic Traits)",
+      "name": "swordsman",
+      "removePrice": 1200,
+      "stats": [
+        "x140% Melee hit chance",
+        "x140% Melee dodge chance"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [],
+      "defName": "DrugDesire",
+      "degree": -1,
+      "description": "{PAWN_nameDef} abhors the idea of gaining pleasure from chemicals, and avoids alcohol and pleasurable drugs. {PAWN_pronoun} is a hard working individual.",
+      "name": "teetotaler",
+      "removePrice": 1200,
+      "stats": [
+        "+20% Global work speed"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [],
+      "defName": "SYR_Tinkerer",
+      "degree": 0,
+      "description": "(Old trait)\n((SYR) Individuality)",
+      "name": "tinkerer(old)",
+      "removePrice": 1200,
+      "stats": []
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [
+        "iron-willed",
+        "steadfast",
+        "nervous",
+        "volatile",
+        "slowlearner",
+        "dunce",
+        "fastlearner",
+        "savant"
+      ],
+      "defName": "TooSmart",
+      "degree": 0,
+      "description": "{PAWN_nameDef} is too smart for {PAWN_possessive} own good. {PAWN_pronoun} learns everything much faster than everyone, but can be quite eccentric.",
+      "name": "toosmart",
+      "removePrice": 1200,
+      "stats": [
+        "+75% Global learning factor",
+        "+12% Mental break threshold"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [],
+      "defName": "TorturedArtist",
+      "degree": 0,
+      "description": "{PAWN_nameDef} feels alienated and misunderstood by other human beings. {PAWN_pronoun} will have a constant mood debuff, but gain a chance (50%) to get a creativity inspiration after a mental break.",
+      "name": "torturedartist",
+      "removePrice": 1200,
+      "stats": []
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [
+        "wimp",
+        "unstoppable",
+        "ironman",
+        "lowpaintolerance"
+      ],
+      "defName": "Tough",
+      "degree": 0,
+      "description": "{PAWN_nameDef} has thick skin, dense flesh, and durable bones. {PAWN_pronoun} takes much less damage than other people from the same blows. {PAWN_pronoun} stands solid like a rock, and equally unmovable.",
+      "name": "tough",
+      "removePrice": 1200,
+      "stats": [
+        "-0.40 Move speed",
+        "x50% Incoming damage multiplier"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [
+        "wimp"
+      ],
+      "defName": "SupremeMelee_QuickReflexes",
+      "degree": 2,
+      "description": "{PAWN_nameDef} reflexes transcends common sense. They can easily parry melee attacks without any training and with a bit of luck even bullets.\n(Supreme Melee)",
+      "name": "transcendantreflexes",
+      "removePrice": 1200,
+      "stats": [
+        "+20.0 Melee parry melee chance",
+        "+10.0 Melee parry projectile chance",
+        "+20.0 Melee dodge chance"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [
+        "bodypurist"
+      ],
+      "defName": "Transhumanist",
+      "degree": 0,
+      "description": "{PAWN_nameDef} feels limited in {PAWN_possessive} feeble human body. {PAWN_pronoun} often dreams of being enhanced by artificial body parts.",
+      "name": "transhumanist",
+      "removePrice": 1200,
+      "stats": []
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [
+        "brawler",
+        "cranialnervepalsy",
+        "eagle-eyed"
+      ],
+      "defName": "ShootingAccuracy",
+      "degree": -1,
+      "description": "Pew! Pew! Pew! [PAWN_nameDef] just likes pulling the trigger. [PAWN_pronoun] shoots faster than others, but less accurately.\n((KV) Consolidated Traits - 1.1)",
+      "name": "trigger-happy",
+      "removePrice": 1200,
+      "stats": [
+        "-50% Aiming time",
+        "-3.0 Shooting accuracy (people)"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [
+        "kind",
+        "conductor"
+      ],
+      "defName": "MT_Tyrant",
+      "degree": 0,
+      "description": "{PAWN_nameDef} harshly criticizes and dictates the actions of others. Colonists around {PAWN_nameDef} move and work faster, but receive a mood debuff from the added stress.\n(Moloy Traits)",
+      "name": "tyrannic",
+      "removePrice": 1200,
+      "stats": []
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [],
+      "defName": "Beauty",
+      "degree": -1,
+      "description": "{PAWN_nameDef} is somewhat ugly. This subtly repels others during social interactions. If there is an upside to this than that no one minds if {PAWN_possessive} face has a scar or two.",
+      "name": "ugly",
+      "removePrice": 1200,
+      "stats": [
+        "-1.0 Beauty"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [
+        "abrasive",
+        "annoyingvoice",
+        "creepybreathing"
+      ],
+      "defName": "RCT_Diplomat",
+      "degree": -1,
+      "description": "Subtlety? Diplomacy? [PAWN_nameDef] barely even understands the meaning of the words.\n((KV) Consolidated Traits - 1.1)",
+      "name": "uncouth",
+      "removePrice": 1200,
+      "stats": [
+        "-15.00% Negotiation ability",
+        "-20.00% Social impact"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [],
+      "defName": "Undergrounder",
+      "degree": 0,
+      "description": "{PAWN_nameDef} has no need to experience the outdoors or light. {PAWN_pronoun} will never feel cooped up or get cabin fever, no matter how long {PAWN_pronoun} stays inside, and is not bothered by darkness.",
+      "name": "undergrounder",
+      "removePrice": 1200,
+      "stats": []
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [
+        "tough",
+        "wimp"
+      ],
+      "defName": "RCT_PainThreshold",
+      "degree": 2,
+      "description": "[PAWN_nameDef] has an exceptionally high tolerance for pain. [PAWN_pronoun] is unlikely to be immobilized by it.\n((KV) Consolidated Traits - 1.1)",
+      "name": "unstoppable",
+      "removePrice": 1200,
+      "stats": [
+        "+25% Pain shock threshold",
+        "-25% Incoming damage multiplier"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [],
+      "defName": "MT_Venturous",
+      "degree": 0,
+      "description": "{PAWN_nameDef} loves to take risks and complete quests. {PAWN_pronoun} will recieve mood buffs for successful quests, and debuffs for failed quests.\n(Moloy Traits)",
+      "name": "venturous",
+      "removePrice": 1200,
+      "stats": []
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [
+        "abrasive",
+        "bloodlust",
+        "idiotsavant",
+        "annoyingvoice"
+      ],
+      "defName": "FT_Charisma",
+      "degree": 2,
+      "description": "[PAWN_nameDef] has a very charismatic personality. [PAWN_pronoun] gets bonuses to all human-like social interactions.\n(Fallout Traits (Continued))",
+      "name": "verycharismatic",
+      "removePrice": 1200,
+      "stats": [
+        "+20.00% Negotiation ability",
+        "+30.00% Social impact",
+        "+10.00% Trade price improvement"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [
+        "wimp",
+        "iron-willed",
+        "steadfast",
+        "nervous",
+        "volatile"
+      ],
+      "defName": "FT_Endurance",
+      "degree": 2,
+      "description": "[PAWN_nameDef] has exceptional health and a very enduring personality. [PAWN_pronoun] is capable of handling high stress situations that others cannot.\n(Fallout Traits (Continued))",
+      "name": "veryenduring",
+      "removePrice": 1200,
+      "stats": [
+        "+20% Pain shock threshold",
+        "-20% Mental break threshold",
+        "+15% Immunity gain speed",
+        "-30% Toxic sensitivity",
+        "-30% Psychic sensitivity"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [
+        "idiotsavant",
+        "stupid",
+        "toosmart"
+      ],
+      "defName": "FT_Intelligence",
+      "degree": 2,
+      "description": "[PAWN_nameDef] is very smart. [PAWN_pronoun] learns faster and has a great understanding of the world around [PAWN_objective].\n(Fallout Traits (Continued))",
+      "name": "veryintelligent",
+      "removePrice": 1200,
+      "stats": [
+        "+20% Research speed",
+        "+30% Global learning factor",
+        "+10.00% Negotiation ability",
+        "+10.00% Trade price improvement"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [
+        "wimp"
+      ],
+      "defName": "FT_Intimidation",
+      "degree": 2,
+      "description": "[PAWN_nameDef] has a very intimidating personality, this gives [PAWN_objective] a big advantage in social interactions.\n(Fallout Traits (Continued))",
+      "name": "veryintimidating",
+      "removePrice": 1200,
+      "stats": [
+        "+20.00% Negotiation ability",
+        "+30.00% Social impact",
+        "+5.00% Trade price improvement"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [],
+      "defName": "Neurotic",
+      "degree": 2,
+      "description": "{PAWN_nameDef} feels constantly nervous about everything that has to get done. {PAWN_pronoun} will work extremely hard to attain this state of affairs, but {PAWN_possessive} random mood swings can easily get the better of {PAWN_objective}.",
+      "name": "veryneurotic",
+      "removePrice": 1200,
+      "stats": [
+        "+40% Global work speed"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [
+        "idiotsavant",
+        "stupid",
+        "abrasive",
+        "oblivious"
+      ],
+      "defName": "FT_Perception",
+      "degree": 2,
+      "description": "[PAWN_nameDef] is very aware of [PAWN_possessive] surroundings and has a great understanding of how [PAWN_possessive] actions affects others.\n(Fallout Traits (Continued))",
+      "name": "veryperceptive",
+      "removePrice": 1200,
+      "stats": [
+        "+20.00% Social impact",
+        "+20.00% Negotiation ability",
+        "+10.00% Trade price improvement",
+        "+5.00% Train animal chance",
+        "+5.00% Tame animal chance"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [
+        "frailback"
+      ],
+      "defName": "FT_StrongBack",
+      "degree": 2,
+      "description": "[PAWN_nameDef] has a very strong back or is part mule or something. [PAWN_pronoun] can carry twice as much as a normal person.\n(Fallout Traits (Continued))",
+      "name": "verystrongback",
+      "removePrice": 1200,
+      "stats": [
+        "+75 Carrying capacity"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [
+        "enduring",
+        "veryenduring",
+        "toosmart",
+        "toosmart"
+      ],
+      "defName": "Nerves",
+      "degree": -2,
+      "description": "{PAWN_nameDef} is on a hair-trigger all the time. {PAWN_pronoun} is the first to break in any tough situation. If that happens {PAWN_pronoun} will find something to smash.",
+      "name": "volatile",
+      "removePrice": 1200,
+      "stats": [
+        "+15% Mental break threshold"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [
+        "peppy",
+        "torturedartist"
+      ],
+      "defName": "MT_Volatile_Crafter",
+      "degree": 0,
+      "description": "{PAWN_nameDef} is a genius crafter, and will often have creative inspiration. However, {PAWN_possessive} mind is constantly ticking, making {PAWN_nameDef} much more likely to have a mental break.\n(Moloy Traits)",
+      "name": "volatilecrafter",
+      "removePrice": 1200,
+      "stats": [
+        "+20% Mental break threshold"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [],
+      "defName": "RCT_Constitution",
+      "degree": -1,
+      "description": "[PAWN_nameDef] is especially vulnerable to diseases, pathogens and toxic fallout.\n((KV) Consolidated Traits - 1.1)",
+      "name": "weakconstitution",
+      "removePrice": 1200,
+      "stats": [
+        "-25% Immunity gain speed",
+        "+50% Toxic sensitivity"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [
+        "brawler",
+        "gunnut",
+        "rooted",
+        "intimidating",
+        "veryintimidating",
+        "agile",
+        "ninja-like",
+        "enduring",
+        "veryenduring",
+        "unstoppable",
+        "ironman",
+        "lowpaintolerance"
+      ],
+      "defName": "Wimp",
+      "degree": 0,
+      "description": "{PAWN_nameDef} is weak and cowardly. Even a little pain will immobilize {PAWN_objective}. At least {PAWN_pronoun} is really good at running and for whatever reason seems to be nearly immune to toxic substances.",
+      "name": "wimp",
+      "removePrice": 1200,
+      "stats": [
+        "-45% Pain shock threshold",
+        "-90% Toxic sensitivity",
+        "+0.40 Move speed"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [],
+      "defName": "wise",
+      "degree": 0,
+      "description": "[PAWN_nameDef] knows a lot and is very intelligent.\n(Synergistic Traits)",
+      "name": "wise",
+      "removePrice": 1200,
+      "stats": [
+        "x110% Global learning factor",
+        "x140% Research speed",
+        "x110% Psychic sensitivity",
+        "x150% Neural heat recovery rate",
+        "x75% Mental break threshold"
+      ]
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [],
+      "defName": "Xenophobia",
+      "degree": -1,
+      "description": "[PAWN_nameDef] thinks aliens are exotic and interesting. They would love to get to know them more and wouldn't mind forming relationships with them.\n(Humanoid Alien Races 2.0)",
+      "name": "xenophile",
+      "removePrice": 1200,
+      "stats": []
+    },
+    {
+      "addPrice": 1200,
+      "bypassLimit": false,
+      "canAdd": true,
+      "canRemove": true,
+      "conflicts": [],
+      "defName": "Xenophobia",
+      "degree": 1,
+      "description": "[PAWN_nameDef] hates and distrusts xenos. They see them as little more than animals.\n(Humanoid Alien Races 2.0)",
+      "name": "xenophobe",
+      "removePrice": 1200,
+      "stats": []
+    }
+  ],
+  "races": [
+    {
+      "defName": "Human",
+      "enabled": true,
+      "name": "human",
+      "price": 4000
+    }
+  ]
 }
